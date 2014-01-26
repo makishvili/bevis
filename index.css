@@ -185,3 +185,24 @@ section:not(.slide-iframe)::before
     -moz-transform:  rotate(43deg);
     transform: rotate(43deg);
 }
+
+.schema .fs {
+    font-family: Monaco, "PT Mono", monospace;
+    font-size: 16px;
+
+    display: inline-block;
+
+    padding: 3px 8px;
+    border-radius: 8px;
+    background: #F7FCA0;
+    color: #000;
+    font-style: normal
+}
+
+fs.one {
+    background: #8dfca2;
+}
+
+fs.two {
+    background: #fcab5f;
+}
