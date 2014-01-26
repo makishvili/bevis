@@ -24,6 +24,32 @@ section:not(.slide-iframe)::before
 }
 */
 
+.slide .slidein
+{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #fff;
+}
+
+.list .slidein:before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    content: ''
+}
+
+.slide h2 {
+    margin: 37px;
+}
+
+/* ========================== */
+
 #Cover .title {
     font-family: 'PT Sans Narrow';
     font-size: 140px;
@@ -38,4 +64,90 @@ section:not(.slide-iframe)::before
     left: 10%;
 
     color: #666;
+}
+
+#Cover .we {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+#Cover .we img {
+    position: relative;
+    z-index: auto;
+
+    width: 70px;
+    height: 70px;
+}
+
+.schema {
+    position: absolute;
+    top: 0;
+    left: 37px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.schema .marat {
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    width: 100px;
+}
+
+.server {
+    position: absolute;
+    left: 300px;
+    top: 150px;
+
+    width: 200px;
+    height: 400px;
+
+    border: 3px solid green;
+    border-radius: 6px;
+}
+
+.server .logo {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+
+    width: 100%;
+}
+
+.server.apache .name{
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+
+    font-size: 80%;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.server.apache img{
+
+    margin-left: 30px;
+    width: 150px;
+    transform: rotate(145deg);
+    -webkit-transform: rotate(145deg);
+}
+
+.server.nginx img{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+
+    width: 100px;
+    margin-bottom: 11px;
+}
+
+.server.nodejs img{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+
+    width: 120px;
 }
