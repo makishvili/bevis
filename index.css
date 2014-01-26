@@ -92,7 +92,7 @@ section:not(.slide-iframe)::before
 .schema .marat {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 47%;
 
     width: 100px;
 }
@@ -102,7 +102,7 @@ section:not(.slide-iframe)::before
     left: 300px;
     top: 150px;
 
-    width: 300px;
+    width: 200px;
     height: 400px;
 
     border: 3px solid green;
@@ -127,28 +127,61 @@ section:not(.slide-iframe)::before
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
-.server img{
+.server .logo img{
     position: absolute;
     bottom: 100%;
     right: 0;
 }
 
-.server.apache img{
+.server.apache .logo img{
     right: 10px;
 
     margin-left: 30px;
     margin-bottom: 20px;
     width: 150px;
 
-    transform: rotate(145deg);
     -webkit-transform: rotate(145deg);
+    -moz-transform:  rotate(145deg);
+    transform: rotate(145deg);
 }
 
-.server.nginx img{
+.server.nginx .logo img{
     width: 100px;
     margin-bottom: 11px;
 }
 
-.server.nodejs img{
+.server.nodejs .logo img{
     width: 120px;
+}
+
+.schema .arrow1 {
+    position: absolute;
+    left: 100px;
+    top: 26%;
+}
+
+.schema .arrow2 {
+    position: absolute;
+    left: 100px;
+    top: 58%;
+}
+
+.schema .request {
+    position: absolute;
+    left: 140px;
+    top: 34%;
+
+    -webkit-transform: rotate(-40deg);
+    -moz-transform:  rotate(-40deg);
+    transform: rotate(-40deg);
+}
+
+.schema .response {
+    position: absolute;
+    left: 150px;
+    top: 70%;
+
+    -webkit-transform: rotate(43deg);
+    -moz-transform:  rotate(43deg);
+    transform: rotate(43deg);
 }
