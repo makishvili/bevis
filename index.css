@@ -102,7 +102,7 @@ section:not(.slide-iframe)::before
     left: 300px;
     top: 150px;
 
-    width: 200px;
+    width: 300px;
     height: 400px;
 
     border: 3px solid green;
@@ -127,27 +127,28 @@ section:not(.slide-iframe)::before
     font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
 }
 
+.server img{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+}
+
 .server.apache img{
+    right: 10px;
 
     margin-left: 30px;
+    margin-bottom: 20px;
     width: 150px;
+
     transform: rotate(145deg);
     -webkit-transform: rotate(145deg);
 }
 
 .server.nginx img{
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-
     width: 100px;
     margin-bottom: 11px;
 }
 
 .server.nodejs img{
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-
     width: 120px;
 }
