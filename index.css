@@ -154,38 +154,16 @@ section:not(.slide-iframe)::before
     width: 120px;
 }
 
-.schema .arrow1 {
+.schema .get {
     position: absolute;
-    left: 100px;
-    top: 26%;
+    left: 120px;
+    top: 30%;
 }
 
-.schema .arrow2 {
+.schema .set {
     position: absolute;
-    left: 100px;
-    top: 58%;
-}
-
-.schema .request {
-    font-size: 16px;
-    position: absolute;
-    left: 160px;
-    top: 36%;
-
-    -webkit-transform: rotate(-40deg);
-    -moz-transform:  rotate(-40deg);
-    transform: rotate(-40deg);
-}
-
-.schema .response {
-    font-size: 16px;
-    position: absolute;
-    left: 156px;
-    top: 68%;
-
-    -webkit-transform: rotate(43deg);
-    -moz-transform:  rotate(43deg);
-    transform: rotate(43deg);
+    left: 120px;
+    top: 65%;
 }
 
 .schema .fs {
@@ -204,15 +182,15 @@ section:not(.slide-iframe)::before
 }
 
 .schema .fs.page {
-    top: 25px;
+    top: 15px;
 }
 
 .schema .fs.data {
-    top: 120px;
+    top: 110px;
 }
 
 .schema .fs.matcher {
-    top: 170px;
+    top: 160px;
 }
 
 .schema .fs.html {
@@ -236,7 +214,7 @@ section:not(.slide-iframe)::before
     left: 0;
 
     width: 83%;
-    height: 250px;
+    height: 220px;
     margin: 0 20px;
 
     color: #000;
@@ -281,12 +259,35 @@ section:not(.slide-iframe)::before
 
 .server .db {
     position: absolute;
-    right: -150px;
-    top: 85px;
+    right: -170px;
+    top: 70px;
 
-    width: 96px;
-    height: 96px;
+    width: 105px;
+    height: 105px;
 
     background: url(pictures/db.svg);
     background-size: cover;
 }
+
+.server .db .r,
+.server .db .l {
+    position: absolute;
+    right: 100%;
+}
+
+.server .db .r {
+    top: -20px;
+}
+
+.server .db .l {
+    top: 72px;
+}
+
+.server .down {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+
+    margin-left: -26px;
+}
+
