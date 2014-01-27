@@ -102,7 +102,7 @@ section:not(.slide-iframe)::before
     left: 300px;
     top: 150px;
 
-    width: 200px;
+    width: 250px;
     height: 400px;
 
     border: 3px solid green;
@@ -167,9 +167,10 @@ section:not(.slide-iframe)::before
 }
 
 .schema .request {
+    font-size: 16px;
     position: absolute;
-    left: 140px;
-    top: 34%;
+    left: 160px;
+    top: 36%;
 
     -webkit-transform: rotate(-40deg);
     -moz-transform:  rotate(-40deg);
@@ -177,9 +178,10 @@ section:not(.slide-iframe)::before
 }
 
 .schema .response {
+    font-size: 16px;
     position: absolute;
-    left: 150px;
-    top: 70%;
+    left: 156px;
+    top: 68%;
 
     -webkit-transform: rotate(43deg);
     -moz-transform:  rotate(43deg);
@@ -201,6 +203,23 @@ section:not(.slide-iframe)::before
     color: #000;
 }
 
+.schema .fs.page {
+    top: 25px;
+}
+
+.schema .fs.data {
+    top: 120px;
+}
+
+.schema .fs.matcher {
+    top: 170px;
+}
+
+.schema .fs.html {
+    bottom: 30px;
+}
+
+
 .schema .fs mark {
     display: inline-block;
 
@@ -209,45 +228,38 @@ section:not(.slide-iframe)::before
     background: #F7FCA0;
 }
 
-fs.one {
-    background: #8dfca2;
-}
-
-fs.two {
-    background: #fcab5f;
-}
-
-.schema .templater {
-    font-family: Monaco, "PT Mono", monospace;
-    font-size: 32px;
-    font-style: normal;
-
+.pr-engine {
     display: inline-block;
 
     position: absolute;
-    top: 170px;
+    top: 40px;
     left: 0;
 
-    width: 80%;
+    width: 83%;
+    height: 250px;
     margin: 0 20px;
 
-    text-align: center;
     color: #000;
 
     border: 1px dotted red !important;
     border-radius: 3px;
 }
 
-.schema .fs.data {
-    top: 30px;
-}
+.pr-engine .legend {
+    font-family: "Lucida Grande", "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-style: normal;
 
-.schema .fs.matcher {
-    top: 90px;
-}
+    position: absolute;
+    top: -18px;
+    left: 5px;
 
-.schema .fs.html {
-    bottom: 30px;
+    padding: 0 5px;
+
+    background: #fff;
+
+    color: #000;
+
 }
 
 .schema .fs.matcher:before {
@@ -263,6 +275,18 @@ fs.two {
     text-align: center;
 
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
 
+}
+
+.server .db {
+    position: absolute;
+    right: -150px;
+    top: 85px;
+
+    width: 96px;
+    height: 96px;
+
+    background: url(pictures/db.svg);
+    background-size: cover;
 }
