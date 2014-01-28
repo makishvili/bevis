@@ -16,93 +16,93 @@
 </header>
 <section class='slide cover' id='Cover'>
     <div class='slidein'>
-        <span class='title'>BEViS</span>
+        <div class='title'>
+            <div class="name">BEViS</div>
+            <br>
+            <div class="slogan">& bt</div>
+        </div>
+        <p class="note"></p>
 
-        <div class="we">
-            <img src="pictures/people/maratik.png" class="marat"/>
-            <img src="pictures/people/vadimchik.png" class="vadim"/>
+        <div class="we next">
+            <img src="pictures/people/folks.png" class="folks"/>
         </div>
     </div>
 </section>
 
 <section class='slide'>
     <div class='slidein'>
-        <h2>Статический сайт</h2>
         <div class="schema">
-            <img src="pictures/people/maratik.png" class="marat"/>
+            <img src="pictures/people/beavis.jpg" class="user"/>
             <img class="get" src="pictures/arr/get.png">
             <img class="set" src="pictures/arr/set.png">
 
-            <div class="server apache">
-                <h3 class="name">Apache</h3>
-                <div class="logo"><img src="pictures/server/apache.png"></div>
+            <div class="server">
+                <h3 class="name">HTTP Server</h3>
 
-                <div class="fs" style="top: 180px;">index.html</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class='slide'>
-    <div class='slidein'>
-        <h2>Динамический сайт</h2>
-        <div class="schema">
-            <img src="pictures/people/maratik.png" class="marat"/>
-            <img class="get" src="pictures/arr/get.png">
-            <img class="set" src="pictures/arr/set.png">
-
-            <div class="server apache">
-                <h3 class="name">Apache</h3>
-                <div class="logo"><img src="pictures/server/apache.png"></div>
-
-                <div class="pr-engine">
-                    <div class="legend">PHP</div>
-
-                    <div class="fs" style="top: 75px;">index.php</div>
-                </div>
-
-                <img src="pictures/arr/next.png" class="down">
-
+                <div class="fs controller">контроллер</div>
+                <div class="fs view">шаблоны представления</div>
                 <div class="fs html">HTML</div>
 
                 <div class="db">
-                    <img src="pictures/arr/right-php.png" class="r" style="top: 12px">
-                    <img src="pictures/arr/left-php.png"  class="l" style="top: 58px">
+                    <img src="pictures/arr/right-php.png" class="r">
+                    <img src="pictures/arr/left-php.png"  class="l">
                 </div>
-            </div>
 
+                <img src="pictures/arr/next.png" class="down1">
+                <img src="pictures/arr/next.png" class="down2">
+            </div>
         </div>
     </div>
 </section>
 
 <section class='slide'>
     <div class='slidein'>
-        <h2>Динамический сайт</h2>
+        <h2>Императивные шаблоны</h2>
+
+        <pre class="small">
+            <code>&lt;p&gt;Уважаемый <mark>{{ person }}</mark>&lt;/p&gt;</code>
+            <code>&lt;p&gt;Ваш заказ от <mark>{{ date:"F j, Y" }}</mark> принят на обработку.&lt;/p&gt;</code>
+            <code>&lt;p&gt;Пожалуйста, убедитесь, что всё выбрано верно:&lt;/p&gt;
+            </code>
+
+            <code>&lt;ul&gt;</code>
+            <code><mark class="one">{% for item in item_list %}</mark></code>
+            <code>    &lt;li&gt;<mark>{{ item }}</mark>&lt;/li&gt;</code>
+            <code><mark class="one">{% endfor %}</mark></code>
+            <code>&lt;/ul&gt;
+            </code>
+
+            <code><mark class="one">{% if ordered_warranty %}</mark></code>
+            <code>    &lt;p&gt;Гарантия - 12 месяцев.&lt;/p&gt;</code>
+            <code><mark class="one">{% else %}</mark></code>
+            <code>    &lt;p&gt;Со всеми неполадками обращайтесь в наш сервиcный центр.&lt;/p&gt;</code>
+            <code><mark class="one">{% endif %}</mark></code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
         <div class="schema">
-            <img src="pictures/people/maratik.png" class="marat"/>
+            <img src="pictures/people/beavis.jpg" class="user"/>
             <img class="get" src="pictures/arr/get.png">
             <img class="set" src="pictures/arr/set.png">
 
-            <div class="server nginx">
-                <div class="logo"><img src="pictures/server/nginx.png"></div>
+            <div class="server">
+                <h3 class="name">HTTP Server</h3>
 
-                <div class="pr-engine">
-                    <div class="legend">XSCRIPT</div>
-
-                    <div class="fs page">index.page.xml</div>
-                    <div class="fs data">index.data.xml</div>
-                    <div class="fs matcher">index.data<mark>.xsl</mark></div>
-                    <!--<div class="templater">XSLT</div>-->
-                </div>
-
-                <img src="pictures/arr/next.png" class="down">
-
+                <div class="fs controller">контроллер</div>
+                <div class="fs view"><mark>декларативные</mark> шаблоны</div>
                 <div class="fs html">HTML</div>
 
                 <div class="db">
-                    <img src="pictures/arr/right.png" class="r">
-                    <img src="pictures/arr/left.png"  class="l">
+                    <img src="pictures/arr/right-php.png" class="r">
+                    <img src="pictures/arr/left-php.png"  class="l">
                 </div>
+
+                <img src="pictures/arr/next.png" class="down1">
+                <img src="pictures/arr/next.png" class="down2">
+
             </div>
         </div>
     </div>
@@ -110,32 +110,54 @@
 
 <section class='slide'>
     <div class='slidein'>
-        <h2>Динамический сайт</h2>
         <div class="schema">
-            <img src="pictures/people/maratik.png" class="marat"/>
+            <img src="pictures/people/beavis.jpg" class="user"/>
             <img class="get" src="pictures/arr/get.png">
             <img class="set" src="pictures/arr/set.png">
 
             <div class="server nodejs">
                 <div class="logo"><img src="pictures/server/nodejs.png"></div>
 
-                <div class="pr-engine">
-                    <div class="legend">BEViS</div>
-
-                    <div class="fs page">index.page.js</div>
-                    <div class="fs data">index<mark>.btjson</mark>.js</div>
-                    <div class="fs matcher">index<mark>.bt</mark>.js</div>
-                    <!--<div class="templater">BT</div>-->
-                </div>
-
-                <img src="pictures/arr/next.png" class="down">
-
+                <div class="fs controller">index.page.js</div>
+                <div class="fs view">index.tmpl.js</div>
                 <div class="fs html">HTML</div>
 
                 <div class="db">
-                    <img src="pictures/arr/right.png" class="r">
-                    <img src="pictures/arr/left.png"  class="l">
+                    <img src="pictures/arr/right-php.png" class="r">
+                    <img src="pictures/arr/left-php.png"  class="l">
                 </div>
+
+                <img src="pictures/arr/next.png" class="down1">
+                <img src="pictures/arr/next.png" class="down2">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <!--<h2>Динамический сайт</h2>-->
+        <div class="schema">
+            <img src="pictures/people/beavis.jpg" class="user"/>
+            <img class="get" src="pictures/arr/get.png">
+            <img class="set" src="pictures/arr/set.png">
+
+            <div class="server nodejs">
+                <div class="logo"><img src="pictures/server/nodejs.png"></div>
+
+                <div class="fs controller">index.page.js</div>
+                <div class="fs data">index<mark>.data</mark>.js</div>
+                <div class="fs" style="top: 145px;">+</div>
+                <div class="fs view">index.tmpl.js</div>
+                <div class="fs html">HTML</div>
+
+                <div class="db">
+                    <img src="pictures/arr/right-php.png" class="r">
+                    <img src="pictures/arr/left-php.png"  class="l" style="top: 68px">
+                </div>
+
+                <img src="pictures/arr/next.png" class="down2">
             </div>
         </div>
     </div>
