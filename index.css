@@ -139,7 +139,7 @@ section:not(.slide-iframe)::before
 .server .logo img{
     position: absolute;
     bottom: 100%;
-    right: 0;
+    left: 0;
 }
 
 .server.nodejs .logo img{

@@ -428,16 +428,10 @@ bt.match('head__title', function (ctx) {
 А вот посмотрите на реальный пример их Яндекса. Это btjson-описание шапки.
 ```javascript
 {
-    "block": "y-header",
-    "view": "islet-search",
+    block: "y-header",
 
-    "showSearch": true,
-    "searchAction": "/",
-    "searchQuery": "Текст запроса",
-
-    "showUser": true,
-
-    "userPic": "user.jpg",
-    "userLogin": "FenekFox"
+    view: "islet-search",
+    showSearch: true,
+    showSuggest: true,
 }
 ```
