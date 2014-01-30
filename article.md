@@ -396,27 +396,19 @@ module.exports = function (pages) {
 Изменим одну строку в шаблоне, будем принимать значение параметра:
 
 ```javascript
-// регистрируем матчер для блока head
 bt.match('head', function (ctx) {
-
     ctx.setTag('div');
-
     ctx.setContent({
         elem: 'title',
         text: ctx.getParam('text') // получаем значение из параметра
     });
-
 });
 
 
 bt.match('head__title', function (ctx) {
-
     ctx.setTag('h1');
-
     var text = ctx.getParam('text');
-
     ctx.setContent(text);
-
 });
 ```
 
