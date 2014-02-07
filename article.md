@@ -327,7 +327,18 @@ bt.match('header', function (ctx) {
 });
 ```
 
-Это почти то же самое, как если в бы в CSS мы могли сказать такое:
+Только не где-нибудь, а в index.bt.js, то есть в файле с шаблонами. Посмотрите ещё раз на схему, чтобы соориентироваться. В SMARTy шаблоны хранятся в `index.tpl.php`, а у нас в `index.bt.js`
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#3)
+
+А теперь снова смотрим на шаблон
+```javascript
+bt.match('header', function (ctx) {
+    ctx.setTag('div');
+});
+```
+
+Вам не кажется, что это напоминает CSS-селектор?
 ```css
 .header {
     tag: div
