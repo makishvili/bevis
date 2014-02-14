@@ -896,7 +896,8 @@ modules.define(
 Всё. Мы описали вам устройство модулей, которые придуманы и разработаны в Яндекс.Картах. Другие модульные системы работают по тому же принципу.
 Но мы используем свои, потому что они лучше. Чем лучше - не скажу, отправляю вас почитать документацию, там всё понятно описано.
 
-Только в этом фрагменте кода написана неправда - мы не используем jQuery для выполнения операций над блоками. Мы используем свой базовый класс для написания блоков. Это такой js-класс,
+Только в этом фрагменте кода написана неправда - мы не используем напрямую jQuery для выполнения операций над блоками.
+Мы используем свой базовый класс для написания блоков. Это такой js-класс,
 который позволяет оперировать в js именно нашими абстрактными блоками, а не тегами. Если нам надо найти блок, или элемент блока, мы делаем это не через dom-методы, типа getElementById,
 а нашими методами.
 
@@ -905,18 +906,24 @@ modules.define(
 // Марат, помоги придумать очень точный пример использования YBlock!
 modules.define(
     'form',
-    ['button', 'input'],
-    function(provide, button, input) {
-        var form = getElementById('my-form');
+    ['button', 'input', 'y-block'],
+    function(provide, button, input, YBlock) {
 
-        form.on('submit', onSubmited);
+        var form = inherit(YBlock, {
+            __constructor: function () {
+                this._bindTo(button, 'submit', this._onSubmited);
 
-        function onSubmited() {
-            if (button.css('disabled')) {
-                return false;
+            },
+
+            _onSubmited: function (e) {
+                e.preventDefault();
+
+                if (button.css('disabled')) {
+                    return false;
+                }
+                this.submit();
             }
-            form.submit();
-        }
+        });
 
         provide(form);
     }
