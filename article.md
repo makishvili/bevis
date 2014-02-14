@@ -864,7 +864,7 @@ modules.define(
     'form',
     ['button', 'input'],
     function(provide, button, input) {
-/*
+
         var form = $('#my-form');
         form.submit(onSubmited);
 
@@ -874,13 +874,14 @@ modules.define(
             }
             form.submit();
         }
-*/
+
         provide(form);
     }
 );
 ```
 
 Вот эта идея.
+Обратите внимание, сам код остался таким же, поменялась только обвязка. Что именно в этой обвязке?
 
 Первая строка - объявление модуля. Та самая обертка.
 
