@@ -836,7 +836,16 @@ skin-shadow() {
 
 ```javascript
 $( document ).ready(function() {
-    $('#header .title').text('The DOM is now loaded and can be manipulated.');
+
+    $('#my-form').submit(onSubmited);
+
+    function onSubmited() {
+        if ($('#my-form .button').css('disabled')) {
+            return false;
+        }
+        $('#my-form').submit();
+    }
+
 });
 ```
 
@@ -855,6 +864,7 @@ modules.define(
     ['button', 'input'],
     function(provide, button, input) {
         var form = getElementById('my-form');
+
         form.on('submit', onSubmited);
 
         function onSubmited() {
