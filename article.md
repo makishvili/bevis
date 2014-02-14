@@ -837,13 +837,14 @@ skin-shadow() {
 ```javascript
 $( document ).ready(function() {
 
-    $('#my-form').submit(onSubmited);
+    var form = $('#my-form');
+    form.submit(onSubmited);
 
     function onSubmited() {
         if ($('#my-form .button').css('disabled')) {
             return false;
         }
-        $('#my-form').submit();
+        form.submit();
     }
 
 });
@@ -863,12 +864,11 @@ modules.define(
     'form',
     ['button', 'input'],
     function(provide, button, input) {
-        var form = getElementById('my-form');
-
-        form.on('submit', onSubmited);
+        var form = $('#my-form');
+        form.submit(onSubmited);
 
         function onSubmited() {
-            if ($(button).css('disabled')) {
+            if (button.css('disabled')) {
                 return false;
             }
             form.submit();
@@ -894,8 +894,32 @@ modules.define(
 Всё. Мы описали вам устройство модулей, которые придуманы и разработаны в Яндекс.Картах. Другие модульные системы работают по тому же принципу.
 Но мы используем свои, потому что они лучше. Чем лучше - не скажу, отправляю вас почитать документацию, там всё понятно описано.
 
+Только в этом фрагменте кода написана неправда - мы не используем jQuery для выполнения операций над блоками. Мы используем свой базовый класс для написания блоков. Это такой js-класс,
+который позволяет оперировать в js именно нашими абстрактными блоками, а не тегами. Если нам надо найти блок, или элемент блока, мы делаем это не через dom-методы, типа getElementById,
+а нашими методами.
 
+```javascript
+// Здесь не получилось очевидного примера.
+// Марат, помоги придумать очень точный пример использования YBlock!
+modules.define(
+    'form',
+    ['button', 'input'],
+    function(provide, button, input) {
+        var form = getElementById('my-form');
 
+        form.on('submit', onSubmited);
+
+        function onSubmited() {
+            if (button.css('disabled')) {
+                return false;
+            }
+            form.submit();
+        }
+
+        provide(form);
+    }
+);
+```
 
 
 Когда бивис сгенерит html для шапки, вы увидите там такое:
