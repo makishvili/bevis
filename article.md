@@ -864,6 +864,7 @@ modules.define(
     'form',
     ['button', 'input'],
     function(provide, button, input) {
+/*
         var form = $('#my-form');
         form.submit(onSubmited);
 
@@ -873,7 +874,7 @@ modules.define(
             }
             form.submit();
         }
-
+*/
         provide(form);
     }
 );
