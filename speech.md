@@ -61,34 +61,22 @@
 Давайте посмотрим внутрь бивис-контролера. Что там, Марат?
 
 ```javascript
-module.exports = function (pages) {
+pages.declare('index-page', function () {
 
-    pages.declare('index-page', function (params) {
-        return {
-            block: 'page',
-            styles: 'index.css',
-            scripts: 'index.js'
+    return [
+        {
+            block: 'header'
+        },
+        {
+            block: 'authorization',
+            actionUrl: '/?task=login'
+        }
+    ];
 
-            body: [
-                {
-                    block: 'header'
-                },
-                {
-                    block: 'authorization',
-                    actionUrl: '/?task=login'
-                }
-            ]
-        };
-    });
-
-};
+});
 ```
 
-**Марат:** Так как мы пишем на `Node.js`, наш яваскрипт завернут в `Node.js` модули. Если вы на `Node.js` не писали, не пугайтесь.
-Не обращайте внимания на первую строку. Относитесь к ней, как обвязке, без которой нельзя. Всё интересное происходит внутри.
-А внутри обычный `javascript`. Видите вызов функции `page.declare()`?
-
-В бивис-приложении есть объект `pages`, у которого есть метод `declare`.
+**Марат:** Обычный `javascript`. В бивис-приложении есть объект `pages`, у которого есть метод `declare`.
 Выражаясь языком юристов, это "декларация о намерениях". Мы декларируем, что наша страница будет состоять из
 нескольких компонентов и перечисляем  эти компоненты в каком-то простом формате.
 
@@ -311,17 +299,14 @@ h1 {
 Предположим, наш контроллер выглядит так - на странице мы хотим видеть одну только шапка. Больше никаких блоков.
 
 ```javascript
-module.exports = function (pages) {
-
-    pages.declare('index-page', function (params) {
-        return {
-            block: 'header'
-        }
-    });
-};
+pages.declare('index-page', function () {
+    return {
+        block: 'header'
+    }
+});
 ```
 
-Фактически, мы видим декларацию только одного блока. Не смотрите на всю мишуру вокруг, сконцентрируйтесь только на этом json:
+Фактически, мы видим декларацию только одного блока. Не смотрите на всю мишуру вокруг, сконцентрируйтесь только на этом `json`:
 
 ```javascript
 {
@@ -436,7 +421,7 @@ module.exports = function (pages) {
 
     var headerTitle = http.get(...); // здесь сходили в базу и получили ответ
 
-    pages.declare('index-page', function (params) {
+    pages.declare('index-page', function () {
         return {
             block: 'header'
             text: headerTitle // здесь подставили значение из базы
