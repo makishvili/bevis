@@ -61,7 +61,7 @@
 Давайте посмотрим внутрь бивис-контролера. Что там, Марат?
 
 ```javascript
-pages.declare('index-page', function () {
+pages.declare('index', function () {
 
     return [
         {
@@ -299,7 +299,7 @@ h1 {
 Предположим, наш контроллер выглядит так - на странице мы хотим видеть одну только шапка. Больше никаких блоков.
 
 ```javascript
-pages.declare('index-page', function () {
+pages.declare('index', function () {
     return {
         block: 'header'
     }
@@ -415,7 +415,7 @@ bt.match('header__title', function (ctx) {
 Давайте сходим в базу за текстом заголовка:
 
 ```javascript
-pages.declare('index-page', function () {
+pages.declare('index', function () {
 
     // Подключили Nodejs-модуль для http-запросов и получили данные из бекенда
     var headerTitle = require('http').get(...);
