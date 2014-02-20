@@ -415,20 +415,16 @@ bt.match('header__title', function (ctx) {
 Давайте сходим в базу за текстом заголовка:
 
 ```javascript
-var http = require('http'); // подключили Nodejs-модуль для http-запросов
+pages.declare('index-page', function () {
 
-module.exports = function (pages) {
+    // Подключили Nodejs-модуль для http-запросов и получили данные из бекенда
+    var headerTitle = require('http').get(...);
 
-    var headerTitle = http.get(...); // здесь сходили в базу и получили ответ
-
-    pages.declare('index-page', function () {
-        return {
-            block: 'header'
-            text: headerTitle // здесь подставили значение из базы
-        }
-    });
-
-};
+    return {
+        block: 'header'
+        text: headerTitle // здесь подставили значение из базы
+    }
+});
 ```
 
 Изменим одну строку в шаблоне — будем принимать значение параметра:
