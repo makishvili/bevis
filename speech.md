@@ -404,50 +404,6 @@ bt.match('header__title', function (ctx) {
 </div>
 ```
 
-А теперь сделаем шапку настраиваемой - чтобы можно было задавать текст заголовка на жестко, а гибко.
-Предполагаю, что имя заголовка нам придёт из базы и контроллер создаст `btjson` с параметром блока, назовём его `text`
-Давайте сходим в базу за текстом заголовка:
-
-```javascript
-pages.declare('index', function () {
-
-    // Подключили Nodejs-модуль для http-запросов и получили данные из бекенда
-    var headerTitle = require('http').get(...);
-
-    return {
-        block: 'header'
-        text: headerTitle // здесь подставили значение из базы
-    }
-});
-```
-
-Изменим одну строку в шаблоне — будем принимать значение параметра:
-
-```javascript
-bt.match('header', function (ctx) {
-    ctx.setTag('div');
-    ctx.setContent({
-        elem: 'title',
-        text: ctx.getParam('text') // получаем значение из параметра
-    });
-});
-
-
-bt.match('header__title', function (ctx) {
-    ctx.setTag('h1');
-    var text = ctx.getParam('text');
-    ctx.setContent(text);
-});
-```
-
-Наш результат — из базы пришёл свежий твит про наше вступление:
-
-```html
-<div class="header">
-    <h1 class="header__title">twitter: Парни из Яндекса рассказывают про BEViS на #codefest. Приколисты!</h1>
-</div>
-```
-
 Но это всё синтетические примеры. Посмотрим на реальный пример их Яндекса. Это описание шапки.
 В нём одно обязательно поле - имя блока, остальные поля - это необязательные параметры, опции:
 
