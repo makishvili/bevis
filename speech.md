@@ -317,7 +317,7 @@ pages.declare('index', function () {
 
 ```javascript
 header {
-    setTag: div;
+    tag: div;
 }
 ```
 
@@ -334,7 +334,7 @@ bt.match('header', function (ctx) {
 Похоже на это, правда?
 ```javascript
 header {
-    setTag: div;
+    tag: div;
 }
 ```
 
