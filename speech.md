@@ -633,7 +633,7 @@ modules.define(
     'form',
     ['jquery'],
     function(provide, $) {
-	}
+
         var form = $('#my-form');
         form.submit(onSubmited);
 
