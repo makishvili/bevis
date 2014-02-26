@@ -354,11 +354,10 @@ bt.match('header', function (ctx) {
 bt.match('header__title', function (ctx) {
     ctx.setTag('h1');
 
-    // Получаем параметр text
-    var text = ctx.getParam('text');
-
-    // задаём содержимое заголовку
-    ctx.setContent(text);
+    // задаём содержимое заголовку из параметра text
+    ctx.setContent(
+        ctx.getParam('text')
+    );
 });
 ```
 
