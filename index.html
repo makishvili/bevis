@@ -56,24 +56,181 @@
     </div>
 </section>
 
-<!--
+<section class='slide'>
+    <div class='slidein'>
+        <h2>BEViS</h2>
+        <div class="schema">
+            <img src="pictures/people/beavis.jpg" class="user"/>
+            <img class="get" src="pictures/arr/line-up.png">
+            <img class="set" src="pictures/arr/line-down.png">
+
+            <div class="server nodejs">
+                <div class="logo"><img src="pictures/server/nodejs.png"></div>
+
+                <div class="fs controller">index<mark>.page.js</mark></div>
+                <div class="fs view">index<mark>.bt.js</mark></div>
+                <div class="fs html">HTML</div>
+
+                <div class="db">
+                    <img src="pictures/arr/right-php.png" class="r">
+                    <img src="pictures/arr/left-php.png"  class="l">
+                </div>
+
+                <img src="pictures/arr/next.png" class="down1">
+                <img src="pictures/arr/next.png" class="down2">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>BEViS controller</h2>
+
+        <pre class='small-medium'>
+            <code>pages.declare('index', function () {</code>
+            <code>    return [</code>
+            <code>        {</code>
+            <code>            block: 'header'</code>
+            <code>        },</code>
+            <code>        {</code>
+            <code>            block: 'authorization',</code>
+            <code>            actionUrl: '/?task=login'</code>
+            <code>        }</code>
+            <code>    ];</code>
+            <code>});</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide cover'>
+    <div class='slidein'>
+        <img src="pictures/bewitched_park_close.jpg" alt="">
+    </div>
+</section>
+
+<section class='slide cover'>
+    <div class='slidein'>
+        <img src="pictures/bewitched_park.jpg" alt="">
+    </div>
+</section>
+
+<section class='slide cover'>
+    <div class='slidein'>
+        <img src="pictures/bread.jpg" alt="">
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Так выглядит простой JSON</h2>
+
+        <pre class='medium'>
+            <code>[</code>
+            <code>    {</code>
+            <code>        block: 'header'</code>
+            <code>    },</code>
+            <code>    {</code>
+            <code>        block: 'authorization',</code>
+            <code>        actionUrl: '/?task=login'</code>
+            <code>    }</code>
+            <code>];</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Так выглядит финальный HTML</h2>
+
+        <pre class='medium'>
+            <code>&lt;div class="header"&gt;</code>
+            <code>    &lt;a class="header__logo" href="/"&gt;&lt;img src="logo.png"&gt;&lt;/a&gt; </code>
+            <code>    &lt;h1 class="header__title"&gt;Демо-страница&lt;/h1&gt; </code>
+            <code>    &lt;a class="header__rss" href="/?rss"&gt;&lt;img src="rss.png"&gt;&lt;/a&gt;</code>
+            <code>&lt;/div>
+            </code>
+            <code>&lt;form class="authorization" action="/?task=login"&gt;</code>
+            <code>    &lt;input class="authorization__login" value=""&gt;</code>
+            <code>    &lt;button class="authorization__submit"&gt;</code>
+            <code>&lt;/form&gt;</code>
+
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Одного имени достаточно</h2>
+
+        <pre class=''>
+            <code>{</code>
+            <code>    друг: 'Марат'</code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Необязательные параметры</h2>
+
+        <pre class=''>
+            <code>{</code>
+            <code>    суп: 'солянка', </code>
+            <code>    <mark class="comment">сметанаНужна: 'да'</mark></code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Простота!</h2>
+
+        <pre class=''>
+            <code>{</code>
+            <code>    block: 'header', </code>
+            <code>    <mark class="comment">showSearch: true</mark></code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Блок - это</h2>
+
+        <ol>
+            <li>HTML-cтруктура</li>
+            <li>CSS-представление</li>
+            <li>JS-поведение</li>
+        </ol>
+    </div>
+</section>
+
+<section class="slide shout">
+    <div class='slidein'>
+        <h2>HTML</h2>
+    </div>
+</section>
+
 <section class='slide'>
     <div class='slidein'>
         <h2>Императивные шаблоны</h2>
 
-        <pre class="small">
-            <code>&lt;p&gt;Уважаемый <mark>{{ person }}</mark>&lt;/p&gt;</code>
-            <code>&lt;p&gt;Ваш заказ от <mark>{{ date:"F j, Y" }}</mark> принят на обработку.&lt;/p&gt;</code>
-            <code>&lt;p&gt;Пожалуйста, убедитесь, что всё выбрано верно:&lt;/p&gt;
-            </code>
-
+        <pre class='small'>
+            <code>&lt;p&gt;Уважаемый <mark class="one">{{ person }}</mark>&lt;/p&gt;</code>
+            <code>&lt;p&gt;Ваш заказ от <mark class="one">{{ date:"F j, Y" }}</mark> принят на обработку.&lt;/p&gt;</code>
+            <code>&lt;p&gt;Пожалуйста, убедитесь, что всё выбрано верно:&lt;/p&gt;</code>
+            <code> </code>
             <code>&lt;ul&gt;</code>
             <code><mark class="one">{% for item in item_list %}</mark></code>
-            <code>    &lt;li&gt;<mark>{{ item }}</mark>&lt;/li&gt;</code>
+            <code>    &lt;li&gt;<mark class="one">{{ item }}</mark>&lt;/li&gt;</code>
             <code><mark class="one">{% endfor %}</mark></code>
-            <code>&lt;/ul&gt;
-            </code>
-
+            <code>&lt;/ul&gt;</code>
+            <code> </code>
             <code><mark class="one">{% if ordered_warranty %}</mark></code>
             <code>    &lt;p&gt;Гарантия - 12 месяцев.&lt;/p&gt;</code>
             <code><mark class="one">{% else %}</mark></code>
@@ -85,6 +242,7 @@
 
 <section class='slide'>
     <div class='slidein'>
+        <h2>Smarty, Django и т.п.</h2>
         <div class="schema">
             <img src="pictures/people/beavis.jpg" class="user"/>
             <img class="get" src="pictures/arr/line-up.png">
@@ -94,36 +252,7 @@
                 <h3 class="name">HTTP Server</h3>
 
                 <div class="fs controller">контроллер</div>
-                <div class="fs view"><mark>декларативные</mark> шаблоны</div>
-                <div class="fs html">HTML</div>
-
-                <div class="db">
-                    <img src="pictures/arr/right-php.png" class="r">
-                    <img src="pictures/arr/left-php.png"  class="l">
-                </div>
-
-                <img src="pictures/arr/next.png" class="down1">
-                <img src="pictures/arr/next.png" class="down2">
-
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-<section class='slide'>
-    <div class='slidein'>
-        <h2>BEViS</h2>
-        <div class="schema">
-            <img src="pictures/people/beavis.jpg" class="user"/>
-            <img class="get" src="pictures/arr/line-up.png">
-            <img class="set" src="pictures/arr/line-down.png">
-
-            <div class="server nodejs">
-                <div class="logo"><img src="pictures/server/nodejs.png"></div>
-
-                <div class="fs controller">index.<mark>page</mark>.js</div>
-                <div class="fs view">index.<mark>bt</mark>.js</div>
+                <div class="fs view"><mark>императивные шаблоны</mark></div>
                 <div class="fs html">HTML</div>
 
                 <div class="db">
@@ -139,43 +268,58 @@
     </div>
 </section>
 
-<!--
 <section class='slide'>
     <div class='slidein'>
-        <h2>BEViS</h2>
+        <h2>Smarty</h2>
         <div class="schema">
             <img src="pictures/people/beavis.jpg" class="user"/>
             <img class="get" src="pictures/arr/line-up.png">
             <img class="set" src="pictures/arr/line-down.png">
 
             <div class="server nodejs">
-                <div class="logo"><img src="pictures/server/nodejs.png"></div>
+                <h3 class="name">HTTP Server</h3>
 
-                <div class="fs controller">index.<mark>page</mark>.js</div>
-                <div class="fs data">index.<mark>btjson</mark>.js</div>
-                <div class="fs" style="top: 145px;">+</div>
-                <div class="fs view">index.<mark>bt</mark>.js</div>
+                <div class="fs controller">index.php</div>
+                <div class="fs view">index<mark>.tpl</mark>.php</div>
                 <div class="fs html">HTML</div>
 
                 <div class="db">
                     <img src="pictures/arr/right-php.png" class="r">
-                    <img src="pictures/arr/left-php.png"  class="l" style="top: 68px">
+                    <img src="pictures/arr/left-php.png"  class="l">
                 </div>
 
+                <img src="pictures/arr/next.png" class="down1">
                 <img src="pictures/arr/next.png" class="down2">
+
             </div>
         </div>
     </div>
 </section>
--->
+
+<section class="slide shout">
+    <div class='slidein'>
+        <h2>Декларативные шаблоны</h2>
+    </div>
+</section>
 
 <!--
     To hide progress bar from entire presentation
     just remove “progress” element.
     -->
-<div class="progress"><div></div></div>
+<!--<div class="progress"><div></div></div>-->
 <script src="shower/shower.min.js"></script>
 
-<!-- http://www.freelogovectors.net/face-avatars-icons-300x300-png-files/ -->
+<!--
+
+В качестве наглядных изображений в презентации использованы:
+
+1. Иконки векторные
+   http://www.freelogovectors.net/face-avatars-icons-300x300-png-files/
+
+2. Картина Леонида Афремова "Заколдованный парк"
+   http://afremov.com/product.php?productid=17678
+
+-->
+
 </body>
 </html>
