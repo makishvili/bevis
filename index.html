@@ -302,6 +302,192 @@
     </div>
 </section>
 
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Что это?</h2>
+
+        <pre class=''>
+            <code>h1 {</code>
+            <code>    color: red; </code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Исходный JSON</h2>
+
+        <pre class='small-medium'>
+            <code>pages.declare('index', function () {</code>
+            <code>    return {</code>
+            <code>        block: 'header'</code>
+            <code>    }</code>
+            <code>});</code>
+        </pre>
+
+        <h2>Финальный HTML</h2>
+
+        <pre class='small-medium'>
+            <code>&lt;div class="header"&gt;</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Абстрактный декларативный шаблон</h2>
+
+        <pre class=''>
+            <code>header {</code>
+            <code>    <mark>tag: div;</mark></code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Абстрактный декларативный шаблон</h2>
+
+        <pre class=''>
+            <code>header {</code>
+            <code>    <mark>tag: div;</mark></code>
+            <code>}</code>
+        </pre>
+
+        <h2>Реальный декларативный шаблон</h2>
+
+        <pre class=''>
+            <code>bt.match('header', function (ctx) {</code>
+            <code>    <mark>ctx.setTag('div');</mark> </code>
+            <code>});</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Делаем шаблон умнее</h2>
+
+        <pre class='small-medium'>
+            <code>bt.match('<mark>header</mark>', function (ctx) {</code>
+            <code>    ctx.setTag('<mark>div</mark>');</code>
+            <code> </code>
+            <code>    <mark class="comment">// Генерим внутри шапки новый JSON</mark></code>
+            <code>    <mark class="comment">// Устанавливаем его, как содержимое шапки</mark></code>
+            <code>    ctx.setContent({</code>
+            <code>        elem: 'title', <mark class="comment">// создаём элемент title в содержимом</mark></code>
+            <code>        titleText: 'CodeFest 2014' <mark class="comment">// параметром передаём в него текст</mark></code>
+            <code>    });</code>
+            <code>});</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Делаем шаблон умнее</h2>
+
+        <pre class='small-medium'>
+            <code>bt.match('<mark>header__title</mark>', function (ctx) {</code>
+            <code>    ctx.setTag('<mark>h1</mark>');</code>
+            <code> </code>
+            <code>    <mark class="comment">// Задаём содержимое заголовку из параметра titleText</mark></code>
+            <code>    ctx.setContent(</code>
+            <code>        ctx.getParam('titleText')</code>
+            <code>    );</code>
+            <code>});</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Делаем шаблон умнее</h2>
+
+        <pre class='small'>
+            <code>bt.match('<mark>header</mark>', function (ctx) {</code>
+            <code>    ctx.setTag('<mark>div</mark>');</code>
+            <code> </code>
+            <code>    ctx.setContent({</code>
+            <code>        elem: 'title', <mark class="comment">// создаём элемент title в содержимом</mark></code>
+            <code>        titleText: 'CodeFest 2014' <mark class="comment">// параметром передаём в него текст</mark></code>
+            <code>    });</code>
+            <code>});</code>
+            <code> </code>
+            <code>bt.match('<mark>header__title</mark>', function (ctx) {</code>
+            <code>    ctx.setTag('<mark>h1</mark>');</code>
+            <code> </code>
+            <code>    ctx.setContent(</code>
+            <code>        ctx.getParam('titleText')</code>
+            <code>    );</code>
+            <code>});</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Результат их работы</h2>
+
+        <pre class='small'>
+            <code>&lt;div class="header"&gt;</code>
+            <code>    &lt;h1 class="header__title"&gt;CodeFest 2014&lt;/h1&gt;</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide shout'>
+    <div class='slidein'>
+        <h2>Шапка Яндекса</h2>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Простой JSON</h2>
+
+        <pre class=''>
+            <code>{</code>
+            <code>    block: "y-header", </code>
+            <code> </code>
+            <code>    view: "islet-search",</code>
+            <code>    showSearch: true,</code>
+            <code>    showSuggest: true</code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+
+<section class='slide shout'>
+    <div class='slidein'>
+        <h2>CSS</h2>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
     To hide progress bar from entire presentation
     just remove “progress” element.
