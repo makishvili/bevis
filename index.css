@@ -24,6 +24,11 @@ section:not(.slide-iframe)::before
 }
 */
 
+.slide:after
+{
+    right: 20px;
+}
+
 .slide .slidein,
 #Cover .slidein
 {

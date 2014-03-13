@@ -469,12 +469,146 @@
     </div>
 </section>
 
+<section class='slide'>
+    <div class='slidein'>
+        <h2>View</h2>
 
+        <pre class=''>
+            <code>{</code>
+            <code>    block: "header", </code>
+            <code>    <mark>view: "search"</mark></code>
+            <code>}</code>
+        </pre>
 
+        <div class="next">
+            <h2>Финальный HTML</h2>
 
+            <pre class="">
+                <code>&lt;div class="header<mark>_search</mark>"&gt;</code>
+                <code>&lt;/div&gt;</code>
+            </pre>
+        </div>
+    </div>
+</section>
 
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Мы так не делаем</h2>
 
+        <pre class="">
+            <code>&lt;div class="<mark class="one">header</mark> <mark class="one">authorization</mark>"&gt;</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
+    </div>
+</section>
 
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Кто-то пишет так</h2>
+
+        <pre class="">
+            <code>&lt;div class="<mark class="one">button</mark> <mark class="two">button_theme_normal</mark> <mark class="two">button_shadow_yes</mark>"&gt;</code>
+            <code>    нажми меня</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Бивис делает иначе</h2>
+
+        <pre class="">
+            <code>&lt;div class="<mark class="one">button_normal-shadow</mark>"&gt;</code>
+            <code>    нажми меня</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
+
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Простой JSON</h2>
+
+        <pre class=''>
+            <code>{</code>
+            <code>    block: "button", </code>
+            <code>    view: "normal-shadow"</code>
+            <code>}</code>
+        </pre>
+
+        <h2>Простой HTML</h2>
+
+        <pre class="">
+            <code>&lt;div class="<mark class="one">button_normal-shadow</mark>"&gt;</code>
+            <code>    нажми меня</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide shout'>
+    <div class='slidein'>
+        <h2>CSS-<br>препроцессор</h2>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Публичные селекторы и приватные функции</h2>
+
+        <pre class='small'>
+            <code><mark class="one">.button</mark> {</code>
+            <code>    skin-common();</code>
+            <code>    skin-theme-normal();</code>
+            <code>}</code>
+            <code> </code>
+            <code><mark class="one">.button_normal-shadow</mark> {</code>
+            <code>    skin-common();</code>
+            <code>    skin-theme-normal();</code>
+            <code>    skin-shadow();</code>
+            <code>}</code>
+        </pre>
+
+        <pre class='small' style="position: absolute; left: 455px; top: 124px;">
+            <code>skin-common() {</code>
+            <code>    <mark class="comment">/* возвращает общие стили для кнопки */</mark></code>
+            <code>}</code>
+            <code> </code>
+            <code>skin-theme-normal() {</code>
+            <code>    <mark class="comment">/* раскрашивает кнопку */</mark></code>
+            <code>}</code>
+            <code> </code>
+            <code>skin-shadow() {</code>
+            <code>    <mark class="comment">/* добавляет под кнопкой тень */</mark></code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Все конфликты под контролем</h2>
+
+        <pre class='small'>
+            <code>.button {</code>
+            <code>    skin-common();</code>
+            <code>    skin-theme-normal();</code>
+            <code>    </code>
+            <code>    <mark>/* а здесь разрулил все конфликты этих миксинов */</mark> </code>
+            <code>}</code>
+            <code> </code>
+            <code>.button_normal-shadow {</code>
+            <code>    skin-common();</code>
+            <code>    skin-theme-normal();</code>
+            <code>    skin-shadow();</code>
+            <code>    </code>
+            <code>    <mark>/* а здесь разрулил все конфликты этих миксинов */</mark> </code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
 
 
 
