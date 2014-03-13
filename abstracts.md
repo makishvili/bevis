@@ -22,13 +22,19 @@
 
 * Обычное MVC-приложение
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#2)
+
 * Бивис-приложение
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#3)
 
 * Марат, расскажи как мы пишем контроллер.
 
 #BEViS controller
 
 **Марат:**
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#4)
 
 * Обычный `javascript`. Объект `pages`, метод `declare`, два компонента. Это обычный `JSON`.
 
@@ -41,6 +47,10 @@
 
 * Картина вблизи
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#5)
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#6)
+
 * Эскиз от дизйнера
 
 * Мы смотрим на эскиз абстрактными модулями
@@ -52,11 +62,16 @@
 
 * Бабушка и хлебопечка.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#7)
+
 
 * Мы с Маратом - пожилые. И ребята в команде - немолодые. Теги и атрибуты - сложно. Много суеты, мало смысла.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#8)
 
 * Простое опсиание страницы --> сложный HTML
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#9)
 
 
 #Достаточно одного имени
@@ -65,7 +80,15 @@
 
 * Марат в гости. Я не хочу думать об устройстве блока и его детях.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#10)
+
 * Солянка со сметаной. Дополнительный параметр.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#11)
+
+* Ну что, похоже на правду?
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#12)
 
 
 #Блок - это...
@@ -76,7 +99,11 @@
 
 * Создавать блоки - просто.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#13)
+
 * Строение - три части.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#14)
 
 * Вадим, расскажи про HTML-структуру.
 
@@ -85,15 +112,37 @@
 
 **Вадим:**
 
-* Императивные шаблоны в PHP
+## Императивные шаблоны в PHP
 
-* Декларативные шаблоны - как в XSLT и в CSS
+[Слайд](http://makishvili.github.io/bevis/index.html?full#15)
 
+* Эти шаблоны мы пишем здесь.
 
-* Как работает селектор
+[Слайд](http://makishvili.github.io/bevis/index.html?full#16)
 
+* `index.tpl.php`
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#17)
+
+* В бивисе мы решаем эту задачу с помощью других шаблонов.
+
+## Декларативные шаблоны
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#18)
+
+* Как в XSLT и в CSS
+
+* Как работает CSS-селектор
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#19)
 
 * Пример JSON, хотим финальный HTML, абстрактный шаблон, реальный bt-шаблон
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#20)
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#21)
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#22)
 
 * Марат, покажи, как написать полноценный шаблон.
 
@@ -102,17 +151,30 @@
 
 * Добавляем в шаблон элемент
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#23)
+
 * Пишем шаблон для элемента
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#24)
+
 * Какой html получили
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#26)
 
 
 * Реальный пример Яндекс-шапки.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#27)
+
 * Обязательное поле — имя блока.
+
+* Финальный HTML
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#28)
 
 * Так это выглядит в браузере
 
+[живое демо]()
 
 ## Чем декларативные шаблоны лучше?
 
@@ -124,19 +186,21 @@
 
 **Марат:**
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#30)
+
 * Императивные шаблоны понятные, пока их немного.
 
 * BT-шаблоны позволяют сохранять сложность на одном уровне.
 
 * BT-шаблоны позволяют иметь явный и понятный API:
 
-  * простая декларация шапки может стать сложным html-кодом
+* простая декларация шапки может стать сложным html-кодом
 
-  * можно менять шаблон, не меняя страницы и другие блоки.
+* можно менять шаблон, не меняя страницы и другие блоки.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#28)
 
 * Бивис реализует идею Web Components.
-
 
 * Вадим, расскажи про представление в бивис-блоках.
 
@@ -145,6 +209,8 @@
 **Вадим:**
 
 * Простое имя — Марат, Вадим, header.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#31)
 
 * Точное имя — Марат Дулин, или Вадим Макишвили. Чтобы добавить в имя уникальности.
 
@@ -156,6 +222,8 @@
 
 * `header` - имя, `view` - фамилия
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#32)
+
 ```javascript
 {
     block: 'header',
@@ -165,6 +233,8 @@
 
 
 * Читать это так:
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#32)
 
 ```html
 <div class="header_search">
@@ -184,8 +254,12 @@
 <div class="header authorization"></div>
 ```
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#33)
+
 
 * Мимино.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#34)
 
 * Хороший летчик не может быть одновременно хорошим эндокринологом - проблемы!
 
@@ -200,6 +274,8 @@
 **Марат:**
 
 * Часто в Яндексе пишут так - базовый класс и модифицирующие классы
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#35)
 
 ```html
 <div class="button button_theme_normal button_shadow_yes">кнопка</div>
@@ -218,14 +294,20 @@
 
 * В Бивисе одна нода - один блок. Если в проекте нужна такая же кнопка, нужен отдельный класс.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#36)
+
 ```html
 <div class="button_normal-shadow">кнопка</div>
 ```
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#37)
 
 
 * Если нужно кнопку отобразить в нажатом состоянии, не нужно писать отдельный вью.
 
 * Вадим, расскажи как мы используем препроцессор.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#38)
 
 
 # CSS-препроцессор
@@ -236,6 +318,8 @@
 
 
 * Не ради сахара. Ради гибкости.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#39)
 
 ```css
 .button {
@@ -268,6 +352,8 @@ skin-shadow() {
 
 * Конфликты правим здесь же. В браузер — один css-селектор. Гарантированно работающий.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#40)
+
 * Спаисбо Комарову.
 
 ## JS
@@ -277,6 +363,8 @@ skin-shadow() {
 **Марат:**
 
 * В маленьких проектах.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#42)
 
 ```javascript
 $( document ).ready(function() {
@@ -294,7 +382,9 @@ $( document ).ready(function() {
 ```
 
 
-* В бивисе не ```$( document ).ready()```, а модули.
+* Этот же код, но внутри модуля.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#43)
 
 ```javascript
 modules.define(
@@ -319,6 +409,8 @@ modules.define(
 * Код тот же, обвязка поменялась. Модуль - это...
 
 * Внутри модулей мы НЕ используем голый jQuery, используем свой базовый класс для абстракции над DOM-деревом.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#44)
 
 ```javascript
 modules.define(
@@ -353,6 +445,8 @@ modules.define(
 
 **Марат:**
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#45)
+
 1. Этот код можно реиспользовать.
 
 2. HTML-структурой блока не важна.
@@ -364,6 +458,8 @@ modules.define(
 **Вадим:**
 
 4. Мы максимально отделили визуальное отображение и поведение.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#46)
 
 ```html
 <div
@@ -388,12 +484,15 @@ modules.define(
 
 * Из `js` мы добавляем css-класс
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#47)
+
 ```html
 <input class="login _unfilled" type="text"/>
 ```
 
-
 * и подготовим стили:
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#47)
 
 ```css
 /* обычное состояние */
@@ -407,8 +506,9 @@ modules.define(
 }
 ```
 
-
 * Эти классы - состояния — State. Почему начинается с подчёркивания? Приватный и заметный.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#BEVIS)
 
 ```
 B — [B]lock
@@ -430,6 +530,8 @@ S — [S]tate
 
 
 * У меня есть дом. И у блока есть дом — `/blocks`. Если здесь нет, больше нигде нет.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#50)
 
 ````
 /blocks
@@ -458,6 +560,7 @@ S — [S]tate
 
 * Учительница ходит по рядам и забирает тетради в стопку. И у нас есть сборщик для html, css, и js.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#enb)
 
 * Марат, почему не Ant, Make, Grunt? Зачем ты сделал ENB?
 
@@ -474,16 +577,26 @@ S — [S]tate
 
 **Вадим:** А ещё у сборщика Марата очень понятная документация и конфигуратор для школьника.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#enb-config)
+
 ## Bevis-ui документация
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#docs)
+
 ## Быстрый старт
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#54)
+
 ## TodoMVC
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#todo)
 
-## Последний слайд
-
-[](http://makishvili.github.io/bevis/index.html?full#56)
+# Заключение
 
 **Вадим:**
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#56)
+
 
 * Нам нравится пользоваться Бивисом потому что
 
@@ -495,5 +608,7 @@ S — [S]tate
 
 * Бивис - для больших сайтов, которым нужна простота и надёжность.
 * С вами была команда Яндекс.Карт и её представители на этой конференции - Вадим Макишвили и Марат Дулин.
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#contacts)
 
 * Спасибо большое!
