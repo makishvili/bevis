@@ -440,12 +440,6 @@
     </div>
 </section>
 
-<section class='slide shout'>
-    <div class='slidein'>
-        <h2>Шапка Яндекса</h2>
-    </div>
-</section>
-
 <section class='slide'>
     <div class='slidein'>
         <h2>Простой JSON</h2>
@@ -462,6 +456,80 @@
     </div>
 </section>
 
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Простой JSON</h2>
+
+        <pre class=''>
+            <code>{</code>
+            <code>    block: "y-header", </code>
+            <code> </code>
+            <code>    view: "islet-search",</code>
+            <code>    showSearch: true,</code>
+            <code>    showSuggest: true</code>
+            <code>}</code>
+        </pre>
+
+        <div style="position: absolute; top: 0; left: 450px;">
+
+            <h2>Сложный HTML</h2>
+
+            <pre class='smallest2'>
+                <code>&lt;header class="y-header_islet-search _init _live-events" data-block="y-header" data-options="{&quot;mixins&quot;:[{&quot;name&quot;:&quot;location-form&quot;}]}"&gt;</code>
+                <code>    &lt;div class="y-header_islet-search__wrapper"&gt;</code>
+                <code>        &lt;a class="y-header_islet-search__logo _lang_ru" href="http://www.yandex.ru"&gt;</code>
+                <code>            &lt;img class="y-header_islet-search__logo-img" alt="Яндекс" src="//yandex.st/lego/_/X31pO5JJJKEifJ7sfvuf3mGeD_8.png"&gt;</code>
+                <code>        &lt;/a&gt;</code>
+                <code>        &lt;div class="y-header_islet-search__info"&gt;</code>
+                <code>            &lt;span class="y-header_islet-search__board-call"&gt;</code>
+                <code>                &lt;a class="y-button_islet-board _init" data-block="y-button" role="button" href="http://www.yandex.ru/all"&gt;</code>
+                <code>                    &lt;span class="y-button_islet-board__icon"&gt;</code>
+                <code>                        &lt;div class="y-header_islet__board-call-icon"&gt;&lt;/div&gt;</code>
+                <code>                    &lt;/span&gt;</code>
+                <code>                &lt;/a&gt;</code>
+                <code>            &lt;/span&gt;</code>
+                <code>        &lt;/div&gt;</code>
+                <code>        &lt;div class="y-header_islet-search__arrow"&gt;</code>
+                <code>            &lt;form class="y-header_islet-search__form _live-events" action="/"&gt;</code>
+                <code>                &lt;div class="y-header_islet-search__button"&gt;</code>
+                <code>                    &lt;button class="y-button_islet _init" data-block="y-button" tabindex="2" type="submit"&gt;&lt;span class="y-button_islet__text"&gt;Найти&lt;/span&gt;&lt;/button&gt;</code>
+                <code>                &lt;/div&gt;</code>
+                <code>                &lt;div class="y-header_islet-search__input"&gt;</code>
+                <code>                    &lt;div class="y-suggest_islet _init" data-block="y-suggest"</code>
+                <code>                         data-options="{&quot;options&quot;:{&quot;suggestDropOptions&quot;:{&quot;view&quot;:&quot;islet-header&quot;,&quot;suggestDropItemView&quot;:&quot;islet-header&quot;},&quot;dataProviderOptions&quot;:{&quot;queryParams&quot;:{&quot;lang&quot;:&quot;ru-RU&quot;,&quot;search_type&quot;:&quot;all&quot;,&quot;fullpath&quot;:1,&quot;v&quot;:5},&quot;posQueryParamName&quot;:&quot;pos&quot;,&quot;textQueryParamName&quot;:&quot;part&quot;,&quot;disableGrouping&quot;:true}},&quot;mixins&quot;:[{&quot;name&quot;:&quot;header-suggest-configurer&quot;}]}"&gt;</code>
+                <code>                        &lt;span class="y-input_islet-label-icons _init" data-block="y-input"&gt;&lt;span class="y-input_islet-label-icons__label"&gt;&lt;a class="y-input_islet-label-icons__label-link" href="/"&gt;Карты&lt;/a&gt;&lt;/span&gt;&lt;span</code>
+                <code>                                class="y-input_islet-label-icons__icons"&gt;&lt;span class="y-input_islet-label-icons__close-small"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="y-input_islet-label-icons__context"&gt;&lt;input</code>
+                <code>                                class="y-input_islet-label-icons__control" id="uniq0" name="text" value="" autocomplete="off"&gt;&lt;/span&gt;&lt;/span&gt;</code>
+                <code>                        &lt;div class="y-suggest-drop_islet-header" data-block="y-suggest-drop" data-options="{&quot;options&quot;:{&quot;wide&quot;:true}}"&gt;&lt;/div&gt;</code>
+                <code>                    &lt;/div&gt;</code>
+                <code>                &lt;/div&gt;</code>
+                <code>            &lt;/form&gt;</code>
+                <code>        &lt;/div&gt;</code>
+                <code>    &lt;/div&gt;</code>
+                <code>    &lt;div class="y-header_islet-search__board"&gt;&lt;/div&gt;</code>
+                <code>&lt;/header&gt;</code>
+            </pre>
+        </div>
+    </div>
+</section>
+
+<section class='slide shout'>
+    <div class='slidein'>
+        <h2>Шапка Яндекса - живая демка</h2>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Чем декларативные шаблоны лучше?</h2>
+
+        <ol>
+            <li>Даже в большом проекте остаются простыми</li>
+            <li>Гарантируют внешнее API блока</li>
+        </ol>
+    </div>
+</section>
 
 <section class='slide shout'>
     <div class='slidein'>
@@ -610,23 +678,271 @@
     </div>
 </section>
 
+<section class='slide shout'>
+    <div class='slidein'>
+        <h2>JS</h2>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>В маленьких проектах</h2>
+
+        <pre class="smallest">
+            <code><mark>$(document).ready(function() {</mark></code>
+            <code> </code>
+            <code> </code>
+            <code> </code>
+            <code> </code>
+            <code>        var form = $('#my-form');</code>
+            <code>        form.submit(onSubmited);</code>
+            <code> </code>
+            <code>        function onSubmited() {</code>
+            <code>            if ($('#my-form .button').hasClass('disabled')) {</code>
+            <code>                return false;</code>
+            <code>            }</code>
+            <code>        }</code>
+            <code> </code>
+            <code> </code>
+            <code> </code>
+            <code><mark>});</mark></code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>В маленьких проектах с модулями</h2>
+
+        <pre class="smallest">
+            <code><mark>modules.define(</mark></code>
+            <code>    <mark>'form',</mark></code>
+            <code>    <mark>['jquery'],</mark></code>
+            <code>    <mark>function(provide, $) {</mark></code>
+            <code> </code>
+            <code>        var form = $('#my-form');</code>
+            <code>        form.submit(onSubmited);</code>
+            <code> </code>
+            <code>        function onSubmited() {</code>
+            <code>            if ($('#my-form .button').hasClass('disabled')) {</code>
+            <code>                return false;</code>
+            <code>            }</code>
+            <code>        }</code>
+            <code> </code>
+            <code>        <mark>provide(form);</mark></code>
+            <code>    <mark>}</mark></code>
+            <code><mark>);</mark></code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Бивис = Модуль + YBlock-класс</h2>
+
+        <pre class="smallest">
+            <code><mark>modules.define(</mark></code>
+            <code>    <mark>'form',</mark></code>
+            <code>    <mark>['button', 'input', 'y-block'],</mark></code>
+            <code>    <mark>function(provide, button, input, YBlock) {</mark></code>
+            <code>        var Form = inherit(<mark class="two">YBlock</mark>, {</code>
+            <code>            __constructor: function () {</code>
+            <code>                this._submitButton = YButton.find(this);</code>
+            <code>                this._bindTo(this.getDomNode(), 'submit', this._onSubmited);</code>
+            <code>            },</code>
+            <code>            _onSubmited: function (e) {</code>
+            <code>                if (this._submitButton.isDisabled()) {</code>
+            <code>                    e.preventDefault();</code>
+            <code>                } else {</code>
+            <code>                    this.emit('submit');</code>
+            <code>                }</code>
+            <code>            }</code>
+            <code>        });</code>
+            <code>        <mark>provide(form);</mark></code>
+            <code>    <mark>}</mark></code>
+            <code><mark>);</mark></code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Бивис = Модуль + YBlock-класс</h2>
+
+        <ol>
+            <li>Код можно реиспользовать</li>
+            <li>Мы управляем абстракциями, а не DOM-объектами</li>
+        </ol>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Поведение отделено от отображения</h2>
+
+        <pre class="">
+            <code>&lt;div</code>
+            <code>    class="<mark>header</mark>"</code>
+            <code>    data-block="<mark class="one">header</mark>"&gt;</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Состояние блока</h2>
+
+        <pre class="medium">
+            <code>&lt;input class="login <mark>_unfilled</mark>" type="text"/&gt;</code>
+            <code></code>
+        </pre>
+        <pre class="medium next">
+            <code><mark class="comment">/* обычное состояние */</mark></code>
+            <code>.login {</code>
+            <code>    ...</code>
+            <code>}</code>
+            <code> </code>
+            <code><mark class="comment">/* тревожное состояние */</mark></code>
+            <code>.login<mark>._unfilled</mark> {</code>
+            <code>    border: 1px solid red;</code>
+            <code>}</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide shout' id="BEVIS">
+    <div class='slidein'>
+        <h2>
+            <span>B</span>lock<br>
+            <span>E</span>lement<br>
+            <span>Vi</span>ew<br>
+            <span>S</span>tate
+        </h2>
+    </div>
+</section>
+
+<section class='slide shout'>
+    <div class='slidein'>
+        <h2>Файлы и сборка</h2>
+    </div>
+</section>
+
+<section class='slide cover'>
+    <div class='slidein'>
+        <h2>Файлы</h2>
+
+        <img src="pictures/fs.png" alt="">
+    </div>
+</section>
 
 
+<section class="slide shout" id="enb">
+    <div class='slidein'>
+    <h2><a href="https://github.com/enb-make/enb">ENB</a></h2>
 
+    <style>
+        #enb h2 {
+            font-size:100px
+        }
+    </style>
+    </div>
+</section>
 
+<section class="slide shout" id="enb-config">
+    <div class='slidein'>
+    <h2>Конфигуратор сборки<br><a href="https://github.com/enb-make/enb">http://enb-make.info/config/</a></h2>
 
+    <style>
+        #enb-config h2 {
+            font-size:60px
+        }
+    </style>
+    </div>
+</section>
 
+<section class="slide shout" id="docs">
+    <div class='slidein'>
+    <h2>Документация<br><a href="https://github.com/bevis-ui/docs">https://github.com/bevis-ui/docs</a></h2>
 
+    <style>
+        #docs h2 {
+            font-size:60px
+        }
+    </style>
+    </div>
+</section>
 
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Быстрый старт</h2>
 
+        <pre class="small-medium">
+            <code>git clone git@github.com:bevis-ui/bevis-stub.git your-project</code>
+            <code>cd your-project</code>
+            <code>make</code>
+        </pre>
+    </div>
+</section>
 
+<section class="slide shout" id="todo">
+    <div class='slidein'>
+    <h2>Todo MVC<br><a href="http://github.com/bevis-ui/bevis-todo">http://github.com/bevis-ui/bevis-todo</a></h2>
 
+    <style>
+        #todo h2 {
+            font-size:60px
+        }
+    </style>
+    </div>
+</section>
 
-<!--
-    To hide progress bar from entire presentation
-    just remove “progress” element.
-    -->
-<!--<div class="progress"><div></div></div>-->
+<section class="slide">
+    <div class='slidein'>
+        <h2>Бивис — это...</h2>
+
+        <ul>
+            <li>Полноценный сайт на обычном JS</li>
+            <li>Покрыт юнит-тестами на 100%</li>
+            <li>Написан в понятном Сode Style</li>
+        </ul>
+
+        <p class="note" style="margin-left: 50px; margin-top: 200px; font-style: italic">Это серьёзный инструмент с добрым лицом ;)</p>
+
+    </div>
+</section>
+
+<section class="slide" id="contacts">
+    <div class="slidein">
+        <header>
+            <h2>BEViS & bt</h2>
+        </header>
+
+        <div style="position: absolute; top: 120px; left: 0px;">
+            <h2 style="font-size: 120%;">Марат&nbsp;Дулин</h2>
+            <ul>
+                <li><a href="http://github.com/mdevils">github.com/mdevils</a></li>
+                <li><a href="mailto:mdevils@yandex-team.ru">mdevils@yandex-team.ru</a></li>
+            </ul>
+        </div>
+
+        <div style="position: absolute; top: 120px; left: 400px;">
+            <h2 style="font-size: 120%;">Вадим&nbsp;Макишвили</h2>
+            <ul>
+            <li><a href="http://makishvili.com">makishvili.com</a></li>
+            <li><a href="mailto:makishvili@yandex-team.ru">makishvili@yandex-team.ru</a></li>
+            </ul>
+        </div>
+
+        <p style="position: absolute; bottom: 20px; left: 50px;">Презентация:
+            <a href="http://bevis-ui.github.io/presentation-bevis-and-bt/">bevis-ui.github.io/presentation-bevis-and-bt/</a></p>
+
+        <div class="we">
+            <img src="pictures/people/folks.png" class="folks"/>
+        </div>
+    </div>
+</section>
+
 <script src="shower/shower.min.js"></script>
 
 <!--

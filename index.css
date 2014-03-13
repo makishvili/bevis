@@ -63,6 +63,16 @@ section:not(.slide-iframe)::before
     margin: 0;
 }
 
+#BEVIS h2 {
+    text-align: left;
+    margin-left: 35%;
+    color: #969696;
+}
+
+#BEVIS h2 span {
+    color: #000000;
+}
+
 /* ========================== */
 
 #Cover .slidein {
@@ -92,13 +102,15 @@ section:not(.slide-iframe)::before
     font-size: 40px;
 }
 
-#Cover .we {
+#Cover .we,
+#contacts .we {
     position: absolute;
     bottom: 0;
     right: 20px;
 }
 
-#Cover .we img {
+#Cover .we img,
+#contacts .we img {
     position: relative;
     z-index: auto;
 
@@ -259,6 +271,18 @@ section:not(.slide-iframe)::before
 .slide pre
 {
     margin-left: 77px;
+}
+
+pre.smallest2 code
+{
+    font-size:  30%;
+    line-height:  14px !important;
+}
+
+pre.smallest code
+{
+    font-size:  50%;
+    line-height:  25px !important;
 }
 
 pre.small code
