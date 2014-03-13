@@ -60,6 +60,8 @@
 
 Марат, расскажи, пожалуйста, как мы пишем контроллер.
 
+####BEViS controller
+
 [Слайд](http://makishvili.github.io/bevis/index.html?full#4)
 
 ```javascript
@@ -153,7 +155,7 @@ pages.declare('index', function () {
 </form>
 ```
 
-####Чтобы пользоваться блоком, достаточно одного имени
+####Достаточно одного имени
 
 И мы в Бивисе сделали одну крутую вещь, которой гордимся. Прям сильно-сильно гордимся.
 
@@ -173,6 +175,8 @@ pages.declare('index', function () {
 ```
 
 И с блоком так же. Когда я хочу, чтобы на станице появился какой-то блок, Я НЕ ХОЧУ думать, о том, из каких тегов и атрибутов он внутри устроен.
+
+####Необязательные параметры
 
 Или когда я в ресторан прихожу и заказываю солянку, я же не даю указаний официанту: "Так, дорогуша, в солянке должно быть четыре кусочка картошки,
 50 граммов салями, солёный огурчик обязательно нарежь меленько..." Нет. Я просто говорю: мне солянку. Ну максимум, меня могут спросить: "Вам со сметаной?"
@@ -201,7 +205,7 @@ pages.declare('index', function () {
 **Марат:** Пусть блоки сами решают, в какой html они должны превратиться. Я не хочу думать, как они устроены внутри.
 Создавать страницы из готовых блоков нам никогда не было ещё так просто.
 
-####Блок - триединство структура-представление-поведение
+####Блок - это...
 Да и сами блоки создавать тоже просто, потому что это очень жизненная абстракция.
 
 [Слайд](http://makishvili.github.io/bevis/index.html?full#13)
@@ -224,7 +228,7 @@ pages.declare('index', function () {
 
 Но начнём по порядку. Сначала Вадим расскажет вам про HTML-структуру.
 
-##HTML-структура
+##HTML
 
 ### Императивные шаблоны
 
@@ -366,7 +370,7 @@ bt.match('header', function (ctx) {
 
 [Слайд](http://makishvili.github.io/bevis/index.html?full#24)
 
-Задаём ему тег и содеримое, которые мы ранее передали через параметр.
+Задаём ему тег и содержимое, которые мы ранее передали через параметр.
 
 ```javascript
 // регистрируем матчер для элемента title блока header
@@ -394,7 +398,7 @@ bt.match('header__title', function (ctx) {
 </div>
 ```
 
-Но это всё синтетический пример. Давайте посмотрим на реальный пример из Яндекса.
+Но это синтетический пример. Давайте посмотрим на реальный пример из Яндекса.
 
 [Слайд](http://makishvili.github.io/bevis/index.html?full#27)
 
@@ -427,7 +431,8 @@ bt.match('header__title', function (ctx) {
 
 [живое демо]
 
-#### Это оверхед?
+#### Чем декларативные шаблоны лучше?
+
 **Вадим:** Кому-то из вас декларативные шаблоны не понравились, я вижу по вашим глазам. Для вас императивные шаблоны Смарти и Джанго привычнее, понятнее.
 Мы должны вам объяснить, почему не используем их. Марат?
 
@@ -514,6 +519,9 @@ BTJson блока - это его внешнее АПИ блока, а BT-шаб
 Это что? Это шапка и форма авторизации одновременно? Это, простите, как возможно?
 
 Вы смотрели "Мимино"? Ну, там ещё Вахтанг Кикабидзе играет лётчика? "Ларису Ивановну хачу". Ну, вспомнили?
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#34)
+
 Там есть такой эпизод. Ммино прилетает в Москву и селится в гостиницу. А там проводится всесоюзный слёт эндокринологов. Места есть только для эндокринологов.
 А он пришёл туда в форме летчика. Представляете себе форму? Синий китель, стрелки на брюках, погоны, фуражка с эмблемой авиации...
 
@@ -534,7 +542,7 @@ BTJson блока - это его внешнее АПИ блока, а BT-шаб
 **Марат:**
 Не знаю, как у вас в проектах, у нас в Яндексе довольно часто можно встретить такие записи:
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#34)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#35)
 
 ```html
 <div class="button button_theme_normal button_shadow_yes">кнопка</div>
@@ -559,7 +567,7 @@ BTJson блока - это его внешнее АПИ блока, а BT-шаб
 Мы в такой ситуации рассуждаем так. Одна нода - один блок. Если в проекте нужна кнопка с темой нормал и тенью, то должен существовать отдельный класс,
 в котором сразу будет и тема нормал и тень. В одном классе. Поэтому та запись с тремя классами превращается в один класс:
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#35)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#36)
 
 ```html
 <div class="button_normal-shadow">кнопка</div>
@@ -567,7 +575,7 @@ BTJson блока - это его внешнее АПИ блока, а BT-шаб
 
 То есть мы делам блок button с view = normal-shadow. В json это записывается нами так:
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#36)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#37)
 
 ```javascript
 {
@@ -583,7 +591,7 @@ BTJson блока - это его внешнее АПИ блока, а BT-шаб
 **Вадим:**
 Кто сейчас не знает, что такое препроцессор? Все знают.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#37)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#38)
 
 Кроме меня. Я относился к CSS-препроцессорам брезгливо. "Баловсто это", — я так считал, — "Тот же CSS, только с синтаксическим сахаром."
 А сахар я не люблю, кофе могу пить и несладкий.
@@ -593,7 +601,7 @@ BTJson блока - это его внешнее АПИ блока, а BT-шаб
 
 Как мы решаем задачу?
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#38)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#39)
 
 ```css
 skin-common() {
@@ -629,7 +637,7 @@ skin-shadow() {
 Мы можем решить конфликты на этапе разработки, а не на этапе использования
 В браузер пойдёт для этого блока один css-селектор. Гарантированно работающий.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#39)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#40)
 
 ```css
 .button_normal-shadow {
@@ -646,13 +654,13 @@ skin-shadow() {
 
 Марат, расскажи, пожалуйста, как мы пишем js для блоков на странице?
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#40)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#41)
 
 
 ## JS-поведение блока
 **Марат:** В маленьких проектах мы делаем так:
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#41)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#42)
 
 ```javascript
 $(document).ready(function() {
@@ -679,7 +687,7 @@ $(document).ready(function() {
 
 То есть, тот же код, что на предыдущем слайде, только лишённый глобального экспорта.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#42)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#43)
 
 ```javascript
 modules.define(
@@ -713,7 +721,7 @@ modules.define(
 Этот класс даёт нам возможность описывать блок в виде абстракции над DOM-деревом.
 И более того, мы не используем JQuery и в процессе написания самого блока, а не только использования.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#43)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#44)
 
 ```javascript
 modules.define(
@@ -744,7 +752,7 @@ modules.define(
 
 **Вадим:** Расскажи, пожалуйста, почему не jQuery? Его же все знают.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#44)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#45)
 
 **Марат:** Во-первых, мы получаем код, который можно вновь и вновь использовать.
 А во-вторых — абстракцию над HTML-структурой блока. Нам не важно, как блок представлен на странице.
@@ -756,7 +764,7 @@ modules.define(
 
 Когда бивис сгенерит html для шапки, вы увидите там такое:
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#45)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#46)
 
 ```html
 <div
@@ -779,13 +787,13 @@ modules.define(
 
 Из `js` мы добавляем дополнительный класс, который отвечает за изменение внешнего вида в состоянии "тревога".
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#46)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#47)
 
 Вот что произойдёт в html-элемнте блока
 ```html
 <input class="login _unfilled" type="text"/>
 ```
-[Слайд](http://makishvili.github.io/bevis/index.html?full#46)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#47)
 
 а вот что мы заранее напишем в стилях
 ```css
@@ -818,7 +826,7 @@ S — [S]tate
 
 Мы почти закончили. Марат, расскажи нам, как блок представлен на файловой системе.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#48)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#49)
 
 ## Сборка статики без боли
 
@@ -832,7 +840,7 @@ S — [S]tate
 В корне проекта есть директория `/blocks`, в ней живут все блоки. Только в ней. Это дом блоков. Не ищите других мест.
 Если блока здесь нет, больше нет нигде.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#49)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#50)
 
 ````
 blocks/
@@ -873,7 +881,7 @@ blocks/
 
 Начать работать на бивисе просто. Три команды:
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#53)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#54)
 
 ```
 git clone git@github.com:bevis-ui/bevis-stub.git your-project
@@ -891,7 +899,7 @@ make
 
 **Вадим:** Нам нравится пользоваться Бивисом.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#55)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#56)
 
 Во-первых, потому что мы сами его придумали. Своя рубашка ближе к телу, кто спорит :)
 Во-вторых, бивис на 99% - это обычный javascript.
@@ -910,6 +918,6 @@ make
 
 **Марат:** Да, Бивис - для больших сайтов, которым нужна простота и надёжность.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#56)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#contacts)
 
 С вами была команда Яндекс.Карт и её представители на этой конференции - Вадим Макишвили и Марат Дулин. Спасибо вам большое за внимание!
