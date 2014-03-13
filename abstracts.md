@@ -60,35 +60,39 @@
 
 * Бивис-блок - простая декларация на JSON. Чем предмет проще, тем легче им пользоваться. Тем больше удовольствия от использования.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#7)
+
 * Бабушка и хлебопечка.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#7)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#8)
 
 
 * Мы с Маратом - пожилые. И ребята в команде - немолодые. Теги и атрибуты - сложно. Много суеты, мало смысла.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#8)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#9)
 
 * Простое опсиание страницы --> сложный HTML
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#9)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#10)
 
 
 #Достаточно одного имени
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#11)
 
 * Гордимся - одного имени достаточно
 
 * Марат в гости. Я не хочу думать об устройстве блока и его детях.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#10)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#12)
 
 * Солянка со сметаной. Дополнительный параметр.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#11)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#13)
 
 * Ну что, похоже на правду?
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#12)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#14)
 
 
 #Блок - это...
@@ -99,78 +103,81 @@
 
 * Создавать блоки - просто.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#13)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#15)
 
 * Строение - три части.
-
-[Слайд](http://makishvili.github.io/bevis/index.html?full#14)
 
 * Вадим, расскажи про HTML-структуру.
 
 
 #HTML
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#16)
+
+
 **Вадим:**
 
 ## Императивные шаблоны в PHP
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#15)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#17)
 
 * Эти шаблоны мы пишем здесь.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#16)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#18)
 
 * `index.tpl.php`
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#17)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#19)
 
 * В бивисе мы решаем эту задачу с помощью других шаблонов.
 
 ## Декларативные шаблоны
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#18)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#20)
 
 * Как в XSLT и в CSS
 
 * Как работает CSS-селектор
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#19)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#21)
 
 * Пример JSON, хотим финальный HTML, абстрактный шаблон, реальный bt-шаблон
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#20)
-
-[Слайд](http://makishvili.github.io/bevis/index.html?full#21)
-
 [Слайд](http://makishvili.github.io/bevis/index.html?full#22)
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#23)
+
+[Слайд](http://makishvili.github.io/bevis/index.html?full#24)
 
 * Марат, покажи, как написать полноценный шаблон.
 
 **Марат:**
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#25)
+
 
 * Добавляем в шаблон элемент
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#23)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#26)
 
 * Пишем шаблон для элемента
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#24)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#27)
 
 * Какой html получили
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#26)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#28)
 
 
 * Реальный пример Яндекс-шапки.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#27)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#29)
 
 * Обязательное поле — имя блока.
 
 * Финальный HTML
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#28)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#30)
 
 * Так это выглядит в браузере
 
@@ -186,7 +193,7 @@
 
 **Марат:**
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#30)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#32)
 
 * Императивные шаблоны понятные, пока их немного.
 
@@ -206,11 +213,12 @@
 
 # CSS
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#33)
+
 **Вадим:**
 
 * Простое имя — Марат, Вадим, header.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#31)
 
 * Точное имя — Марат Дулин, или Вадим Макишвили. Чтобы добавить в имя уникальности.
 
@@ -222,7 +230,7 @@
 
 * `header` - имя, `view` - фамилия
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#32)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#34)
 
 ```javascript
 {
@@ -234,7 +242,7 @@
 
 * Читать это так:
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#32)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#34)
 
 ```html
 <div class="header_search">
@@ -250,16 +258,15 @@
 
 * Важное заявление! Имя может быть только одно
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#35)
+
 ```
 <div class="header authorization"></div>
 ```
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#33)
-
-
 * Мимино.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#34)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#36)
 
 * Хороший летчик не может быть одновременно хорошим эндокринологом - проблемы!
 
@@ -275,7 +282,7 @@
 
 * Часто в Яндексе пишут так - базовый класс и модифицирующие классы
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#35)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#37)
 
 ```html
 <div class="button button_theme_normal button_shadow_yes">кнопка</div>
@@ -294,20 +301,20 @@
 
 * В Бивисе одна нода - один блок. Если в проекте нужна такая же кнопка, нужен отдельный класс.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#36)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#38)
 
 ```html
 <div class="button_normal-shadow">кнопка</div>
 ```
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#37)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#39)
 
 
 * Если нужно кнопку отобразить в нажатом состоянии, не нужно писать отдельный вью.
 
 * Вадим, расскажи как мы используем препроцессор.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#38)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#40)
 
 
 # CSS-препроцессор
@@ -319,7 +326,7 @@
 
 * Не ради сахара. Ради гибкости.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#39)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#41)
 
 ```css
 .button {
@@ -352,7 +359,7 @@ skin-shadow() {
 
 * Конфликты правим здесь же. В браузер — один css-селектор. Гарантированно работающий.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#40)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#42)
 
 * Спаисбо Комарову.
 
@@ -360,11 +367,13 @@ skin-shadow() {
 
 * Марат, расскажи, как мы пишем js?
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#43)
+
 **Марат:**
 
 * В маленьких проектах.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#42)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#44)
 
 ```javascript
 $( document ).ready(function() {
@@ -384,7 +393,7 @@ $( document ).ready(function() {
 
 * Этот же код, но внутри модуля.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#43)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#45)
 
 ```javascript
 modules.define(
@@ -410,7 +419,7 @@ modules.define(
 
 * Внутри модулей мы НЕ используем голый jQuery, используем свой базовый класс для абстракции над DOM-деревом.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#44)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#46)
 
 ```javascript
 modules.define(
@@ -445,11 +454,11 @@ modules.define(
 
 **Марат:**
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#45)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#47)
 
 1. Этот код можно реиспользовать.
 
-2. HTML-структурой блока не важна.
+2. HTML-структура блока не важна.
 
 3. Мы смотрим на блоки с точки зрения семантики их работы.
 
@@ -459,7 +468,7 @@ modules.define(
 
 4. Мы максимально отделили визуальное отображение и поведение.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#46)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#48)
 
 ```html
 <div
@@ -484,15 +493,13 @@ modules.define(
 
 * Из `js` мы добавляем css-класс
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#47)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#49)
 
 ```html
 <input class="login _unfilled" type="text"/>
 ```
 
 * и подготовим стили:
-
-[Слайд](http://makishvili.github.io/bevis/index.html?full#47)
 
 ```css
 /* обычное состояние */
@@ -520,6 +527,8 @@ S — [S]tate
 
 * Мы почти закончили. Марат, расскажи, как блок представлен на файловой системе.
 
+[Слайд](http://makishvili.github.io/bevis/index.html?full#51)
+
 # На файловой системе...
 
 **Марат:**
@@ -531,7 +540,7 @@ S — [S]tate
 
 * У меня есть дом. И у блока есть дом — `/blocks`. Если здесь нет, больше нигде нет.
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#50)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#52)
 
 ````
 /blocks
@@ -585,7 +594,7 @@ S — [S]tate
 
 ## Быстрый старт
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#54)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#56)
 
 ## TodoMVC
 
@@ -595,7 +604,7 @@ S — [S]tate
 
 **Вадим:**
 
-[Слайд](http://makishvili.github.io/bevis/index.html?full#56)
+[Слайд](http://makishvili.github.io/bevis/index.html?full#58)
 
 
 * Нам нравится пользоваться Бивисом потому что
