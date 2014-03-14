@@ -106,13 +106,17 @@
 
 <section class='slide cover'>
     <div class='slidein'>
-        <img src="pictures/bewitched_park_close.jpg" alt="">
+        <img src="pictures/morning1.jpg" alt="">
     </div>
 </section>
 
 <section class='slide cover'>
     <div class='slidein'>
-        <img src="pictures/bewitched_park.jpg" alt="">
+        <div style="position: absolute; bottom: -20px; right: -30px; text-align: right;">
+            <h2 style="font-size: 50%; color: #fff">И.И.Шишкин, К.А.Савицкий<br>&laquo;Утро в сосновом бору&raquo;<br>1889</h2>
+        </div>
+
+        <img src="pictures/morning2.jpg" alt="">
     </div>
 </section>
 
@@ -599,7 +603,9 @@
 
 <section class='slide cover'>
     <div class='slidein'>
-        <h2 style="color: #fff">Мимино</h2>
+        <div style="position: absolute; bottom: -20px; right: -30px; text-align: right;">
+            <h2 style="font-size: 50%; color: #000000">Г.Данелия, 1977<br>В.Кикабидзе<br>&laquo;Мимино&raquo;</h2>
+        </div>
 
         <img src="pictures/mimino.jpg" alt="">
     </div>
@@ -659,13 +665,14 @@
 
 <section class='slide'>
     <div class='slidein'>
-        <h2>Публичные селекторы и приватные функции</h2>
+        <h2>Публичные селекторы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Приватные функции</h2>
 
-        <pre class='small'>
+        <pre class='medium'>
             <code><mark class="one">.button</mark> {</code>
             <code>    skin-common();</code>
             <code>    skin-theme-normal();</code>
             <code>}</code>
+            <code> </code>
             <code> </code>
             <code><mark class="one">.button_normal-shadow</mark> {</code>
             <code>    skin-common();</code>
@@ -674,17 +681,17 @@
             <code>}</code>
         </pre>
 
-        <pre class='small' style="position: absolute; left: 455px; top: 124px;">
+        <pre class='medium' style="position: absolute; left: 455px; top: 124px;">
             <code>skin-common() {</code>
-            <code>    <mark class="comment">/* возвращает общие стили для кнопки */</mark></code>
+            <code>    <mark class="comment">/* общие стили кнопки */</mark></code>
             <code>}</code>
             <code> </code>
             <code>skin-theme-normal() {</code>
-            <code>    <mark class="comment">/* раскрашивает кнопку */</mark></code>
+            <code>    <mark class="comment">/* цвета кнопки */</mark></code>
             <code>}</code>
             <code> </code>
             <code>skin-shadow() {</code>
-            <code>    <mark class="comment">/* добавляет под кнопкой тень */</mark></code>
+            <code>    <mark class="comment">/* тень под кнопкой */</mark></code>
             <code>}</code>
         </pre>
     </div>
@@ -694,14 +701,13 @@
     <div class='slidein'>
         <h2>Все конфликты под контролем</h2>
 
-        <pre class='small'>
+        <pre class='medium'>
             <code>.button {</code>
             <code>    skin-common();</code>
             <code>    skin-theme-normal();</code>
             <code>    </code>
             <code>    <mark>/* а здесь разрулил все конфликты этих миксинов */</mark> </code>
             <code>}</code>
-            <code> </code>
             <code>.button_normal-shadow {</code>
             <code>    skin-common();</code>
             <code>    skin-theme-normal();</code>
@@ -723,12 +729,8 @@
     <div class='slidein'>
         <h2>В маленьких проектах</h2>
 
-        <pre class="smallest">
+        <pre class="small-medium">
             <code><mark>$(document).ready(function() {</mark></code>
-            <code> </code>
-            <code> </code>
-            <code> </code>
-            <code> </code>
             <code>        var form = $('#my-form');</code>
             <code>        form.submit(onSubmited);</code>
             <code> </code>
@@ -737,9 +739,6 @@
             <code>                return false;</code>
             <code>            }</code>
             <code>        }</code>
-            <code> </code>
-            <code> </code>
-            <code> </code>
             <code><mark>});</mark></code>
         </pre>
     </div>
@@ -749,12 +748,11 @@
     <div class='slidein'>
         <h2>В маленьких проектах с модулями</h2>
 
-        <pre class="smallest">
+        <pre class="small">
             <code><mark>modules.define(</mark></code>
             <code>    <mark>'form',</mark></code>
             <code>    <mark>['jquery'],</mark></code>
             <code>    <mark>function(provide, $) {</mark></code>
-            <code> </code>
             <code>        var form = $('#my-form');</code>
             <code>        form.submit(onSubmited);</code>
             <code> </code>
@@ -874,37 +872,19 @@
 
 <section class="slide shout" id="enb">
     <div class='slidein'>
-    <h2><a href="https://github.com/enb-make/enb">ENB</a></h2>
-
-    <style>
-        #enb h2 {
-            font-size:100px
-        }
-    </style>
+        <h2 style="font-size: 60px;">ENB-сборщик<br><br><a href="http://github.com/enb-make/enb">http://github.com/enb-make/enb</a></h2>
     </div>
 </section>
 
 <section class="slide shout" id="enb-config">
     <div class='slidein'>
-    <h2>Конфигуратор сборки<br><a href="https://github.com/enb-make/enb">http://enb-make.info/config/</a></h2>
-
-    <style>
-        #enb-config h2 {
-            font-size:60px
-        }
-    </style>
+        <h2 style="font-size: 60px;">ENB-конфигуратор<br><br><a href="http://github.com/enb-make/enb">http://enb-make.info/config/</a></h2>
     </div>
 </section>
 
 <section class="slide shout" id="docs">
     <div class='slidein'>
-    <h2>Документация<br><a href="https://github.com/bevis-ui/docs">https://github.com/bevis-ui/docs</a></h2>
-
-    <style>
-        #docs h2 {
-            font-size:60px
-        }
-    </style>
+        <h2 style="font-size: 60px;">BEViS-документация<br><br><a href="http://github.com/bevis-ui/docs">http://github.com/bevis-ui/docs</a></h2>
     </div>
 </section>
 
@@ -922,21 +902,15 @@
 
 <section class="slide shout" id="todo">
     <div class='slidein'>
-    <h2>Todo MVC<br><a href="http://github.com/bevis-ui/bevis-todo">http://github.com/bevis-ui/bevis-todo</a></h2>
-
-    <style>
-        #todo h2 {
-            font-size:60px
-        }
-    </style>
+        <h2 style="font-size: 60px;">Todo MVC<br><br><a href="http://github.com/bevis-ui/bevis-todo">http://github.com/bevis-ui/bevis-todo</a></h2>
     </div>
 </section>
 
 <section class="slide">
     <div class='slidein'>
-        <h2>Бивис — это...</h2>
+        <h2>BEViS</h2>
 
-        <ul>
+        <ul style="font-size: 28px;">
             <li>Полноценный сайт на обычном JS</li>
             <li>Покрыт юнит-тестами на 100%</li>
             <li>Написан в понятном Сode Style</li>
@@ -947,30 +921,44 @@
     </div>
 </section>
 
+<section class="slide shout">
+    <div class='slidein'>
+        <h2><span style="color: #000; margin-right: 40px;">(:</span> Спасибо <span style="color: #000; margin-left: 40px;">;)</span></h2>
+    </div>
+</section>
+
 <section class="slide" id="contacts">
     <div class="slidein">
         <header>
-            <h2>BEViS & bt</h2>
+            <h2 style="font-size: 360%;">BEViS & bt</h2>
         </header>
 
-        <div style="position: absolute; top: 120px; left: 0px;">
-            <h2 style="font-size: 120%;">Марат&nbsp;Дулин</h2>
-            <ul>
-                <li><a href="http://github.com/mdevils">github.com/mdevils</a></li>
+        <div style="position: absolute; top: 200px; left: -40px;">
+            <ul style="font-size: 110%;">
+                <li>Репозиторий — <a href="http://github.com/bevis-ui">github.com/bevis-ui</a></li>
+                <li>Презентация — <a href="http://bevis-ui.github.io/bevis-and-bt/">bevis-ui.github.io/bevis-and-bt</a></li>
+            </ul>
+            <ul style="font-size: 110%;">
+                <li>bt — <a href="http://github.com/enb-make/bt">github.com/enb-make/bt</a></li>
+                <li>ENB — <a href="http://github.com/enb-make/enb">github.com/enb-make/enb</a></li>
+                <li>ENB-конфигуратор — <a href="http://github.com/enb-make/enb">enb-make.info/config</a></li>
+            </ul>
+        </div>
+
+        <div style="position: absolute; top: 120px; right: 30px;">
+            <h2 style="font-size: 100%; margin-bottom: 10px;">Марат&nbsp;Дулин</h2>
+            <ul style="font-size: 60%;">
                 <li><a href="mailto:mdevils@yandex-team.ru">mdevils@yandex-team.ru</a></li>
+                <li><a href="http://github.com/mdevils">github.com/mdevils</a></li>
+            </ul>
+            <h2 style="font-size: 100%;margin-bottom: 10px;">Вадим&nbsp;Макишвили</h2>
+            <ul style="font-size: 60%;">
+                <li><a href="mailto:makishvili@yandex-team.ru">makishvili@yandex-team.ru</a></li>
+                <li><a href="http://makishvili.com">makishvili.com</a></li>
             </ul>
         </div>
 
-        <div style="position: absolute; top: 120px; left: 400px;">
-            <h2 style="font-size: 120%;">Вадим&nbsp;Макишвили</h2>
-            <ul>
-            <li><a href="http://makishvili.com">makishvili.com</a></li>
-            <li><a href="mailto:makishvili@yandex-team.ru">makishvili@yandex-team.ru</a></li>
-            </ul>
-        </div>
-
-        <p style="position: absolute; bottom: 20px; left: 50px;">Презентация:
-            <a href="http://bevis-ui.github.io/presentation-bevis-and-bt/">bevis-ui.github.io/presentation-bevis-and-bt/</a></p>
+        <p style="position: absolute; bottom: 20px; left: 50px;"></p>
 
         <div class="we">
             <img src="pictures/people/folks.png" class="folks"/>
