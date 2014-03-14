@@ -1322,6 +1322,7 @@
 .y-header_islet__arrow {
   display: inline-block;
   max-width: 620px;
+  min-height: 32px;
 /* По дизайну внутри стрелки точновыверенные отступы */
   padding: 5px 25px 5px 5px;
 /* Все версии */
