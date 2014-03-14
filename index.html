@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" class="y-ua_svg_yes">
 <head>
     <title>BEViS</title>
     <meta charset="utf-8">
@@ -528,7 +528,22 @@
 
 <section class='slide shout'>
     <div class='slidein'>
-        <h2>Шапка Яндекса - живая демка</h2>
+        <div id="live-header">
+            <textarea id="live-header-code">{
+    block: 'y-header',
+
+    view: 'islet-search',
+    showBoard: true,
+    serviceName: 'Карты',
+    searchQuery: 'Новосибирск'
+}</textarea>
+
+            <div id="live-header-demo"></div>
+
+            <script src="live-header/live-header.bt.js" type="text/javascript"></script>
+            <script src="live-header/live-header.js" type="text/javascript"></script>
+            <link rel='stylesheet' href='live-header/live-header.css'/>
+        </div>
     </div>
 </section>
 
