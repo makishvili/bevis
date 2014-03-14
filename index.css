@@ -344,3 +344,27 @@ mark.two
 .slide ul li {
     text-indent: 1em;
 }
+
+#live-header-code {
+    border: 1px gray solid;
+    background: black;
+    color: #ffffff;
+    font-family: Courier, monospace;
+    font-size: 30px;
+    padding: 10px;
+    width: 94%;
+    box-sizing: border-box;
+    margin: 3%;
+    height: 330px;
+}
+
+#live-header-demo {
+    font: 14px Arial, Helvetica, sans-serif;
+    color: #000;
+    background: #fff;
+    margin-top: 5%;
+}
+
+#live-header-demo a {
+    border-bottom: none;
+}
