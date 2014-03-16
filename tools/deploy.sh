@@ -1,15 +1,19 @@
 #!/bin/sh
 
-## Pulling any updates from Github Pages
+REPO_URL=`git config --get remote.origin.url`
+
+if [ -d _deploy ];
+    then
+        cd _deploy
+        git pull origin gh-pages
+        cd ../
+    else
+        git clone -b gh-pages "$REPO_URL" _deploy
+        rm -rf _deploy/*
+fi
+
+rsync -av --recursive --exclude="_deploy" --exclude="tools" --exclude="Makefile" * _deploy/
 cd _deploy
-git pull origin gh-pages
-
-## Coping new changes
-rsync --recursive --exclude="_deploy" --exclude="tools" ../* .
-
-## Committing
-git add .
-git commit -m "Deploing"
-
-## Pushing generated _deploy website
+git add -A
+git commit -m "update"
 git push origin gh-pages
