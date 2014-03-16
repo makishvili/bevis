@@ -9,9 +9,9 @@ if [ -d _deploy ];
         cd ../
     else
         git clone -b gh-pages "$REPO_URL" _deploy
-        rm -rf _deploy/*
 fi
 
+rm -rf _deploy/*
 rsync -av --recursive --exclude="_deploy" --exclude="tools" --exclude="Makefile" * _deploy/
 cd _deploy
 git add -A
