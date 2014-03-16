@@ -15,12 +15,6 @@ git commit -m "Init gh-pages"
 git branch -m gh-pages
 
 ## Pushing gh-pages into your project
-echo ""
-printf "Enter the read/write url for your repository\n"
-printf "(For example, 'git@github.com:your_username/your_project.git)\n"
-printf "           or 'https://github.com/your_username/your_project.git')\n"
-printf ">"
-read RepoUrl
-
+RepoUrl = `git config --get remote.origin.url`
 git remote add origin $RepoUrl
 git push origin gh-pages
