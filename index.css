@@ -63,13 +63,23 @@ section:not(.slide-iframe)::before
     margin: 0;
 }
 
-#BEVIS h2 {
+#BEVIS .abbr {
     text-align: left;
-    margin-left: 35%;
     color: #969696;
+
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    width: 100%;
+    font-size: 120px;
+    line-height: 120px;
+
+    /*margin: 37px;*/
+
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 
-#BEVIS h2 span {
+#BEVIS .abbr span {
     color: #000000;
 }
 
@@ -250,18 +260,6 @@ section:not(.slide-iframe)::before
     color: #E7792C !important;
 }
 
-
-.server .db {
-    position: absolute;
-    right: -140px;
-    top: 30px;
-
-    width: 105px;
-    height: 105px;
-
-    background: url(pictures/db.svg);
-    background-size: cover;
-}
 
 .server .db .r,
 .server .db .l {
