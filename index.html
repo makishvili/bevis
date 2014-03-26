@@ -69,16 +69,11 @@
     <div class='slidein'>
         <h2>BEViS controller</h2>
 
-        <pre class='small-medium'>
+        <pre class=''>
             <code>pages.declare('index', function () {</code>
             <code>    return [</code>
-            <code>        {</code>
-            <code>            block: 'header'</code>
-            <code>        },</code>
-            <code>        {</code>
-            <code>            block: 'authorization',</code>
-            <code>            actionUrl: '/?task=login'</code>
-            <code>        }</code>
+            <code>        { block: 'header' },</code>
+            <code>        { block: 'authorization' }</code>
             <code>    ];</code>
             <code>});</code>
         </pre>
@@ -115,39 +110,43 @@
 
 <section class='slide'>
     <div class='slidein'>
-        <h2>Так выглядит простой JSON</h2>
+        <h2>Простой JSON</h2>
 
         <pre class='medium'>
             <code>[</code>
-            <code>    {</code>
-            <code>        block: 'header'</code>
-            <code>    },</code>
-            <code>    {</code>
-            <code>        block: 'authorization',</code>
-            <code>        actionUrl: '/?task=login'</code>
-            <code>    }</code>
+            <code>  { block: 'header' },</code>
+            <code>  { block: 'authorization' }</code>
             <code>];</code>
         </pre>
-    </div>
-</section>
 
-<section class='slide'>
-    <div class='slidein'>
-        <h2>Так выглядит финальный HTML</h2>
+        <div class="next" style="position: absolute; left: 455px; top: 0">
+            <h2>Сложный HTML</h2>
 
-        <pre class='medium'>
-            <code>&lt;div class="header"&gt;</code>
-            <code>    &lt;a class="header__logo" href="/"&gt;&lt;img src="logo.png"&gt;&lt;/a&gt; </code>
-            <code>    &lt;h1 class="header__title"&gt;Демо-страница&lt;/h1&gt; </code>
-            <code>    &lt;a class="header__rss" href="/?rss"&gt;&lt;img src="rss.png"&gt;&lt;/a&gt;</code>
-            <code>&lt;/div>
-            </code>
-            <code>&lt;form class="authorization" action="/?task=login"&gt;</code>
-            <code>    &lt;input class="authorization__login" value=""&gt;</code>
-            <code>    &lt;button class="authorization__submit"&gt;</code>
-            <code>&lt;/form&gt;</code>
+            <pre class='smallest' style="position: absolute; left: 20px; top: 124px;">
+                <code>&lt;div class="header"&gt;</code>
+                <code>    &lt;a class="header__logo" href="/"&gt;</code>
+                <code>        &lt;img src="logo.png"&gt;</code>
+                <code>    &lt;/a&gt; </code>
+                <code>    &lt;h1 class="header__title"&gt;Демо-страница&lt;/h1&gt; </code>
+                <code>    &lt;h2 class="header__slogan"&gt;Слоган&lt;/h2&gt; </code>
+                <code>    &lt;a class="header__rss" href="/?rss"&gt;</code>
+                <code>        &lt;img src="rss.png"&gt;</code>
+                <code>    &lt;/a&gt;</code>
+                <code>&lt;/div> </code>
+                <code>&lt;form class="authorization" action="/?task=login"&gt;</code>
+                <code>    &lt;label class="authorization__label"&gt;Логин&lt;/label&gt;</code>
+                <code>    &lt;input class="authorization__login" value=""&gt;</code>
+                <code>    &lt;label class="authorization__label"&gt;Пароль&lt;/label&gt;</code>
+                <code>    &lt;input class="authorization__password" </code>
+                <code>        value="" type="password"&gt;</code>
+                <code>    &lt;button class="authorization__submit"&gt;</code>
+                <code>        Войти</code>
+                <code>    &lt;/button&gt;</code>
+                <code>&lt;/form&gt;</code>
 
-        </pre>
+            </pre>
+
+        </div>
     </div>
 </section>
 
@@ -341,10 +340,7 @@
         <pre class='small-medium'>
             <code>bt.match('<mark>header</mark>', function (ctx) {</code>
             <code>    ctx.setTag('<mark>div</mark>');</code>
-            <code> </code>
-            <code>    <mark class="comment">// Генерим внутри шапки новый JSON</mark></code>
-            <code>    <mark class="comment">// Устанавливаем его, как содержимое шапки</mark></code>
-            <code>    ctx.setContent({</code>
+            <code>    ctx.setContent({ <mark class="comment">// Генерим внутри шапки новый JSON</mark> </code>
             <code>        elem: 'title', <mark class="comment">// создаём элемент title в содержимом</mark></code>
             <code>        titleText: 'CodeFest 2014' <mark class="comment">// параметром передаём в него текст</mark></code>
             <code>    });</code>
@@ -353,6 +349,7 @@
     </div>
 </section>
 
+<!--
 <section class='slide'>
     <div class='slidein'>
         <h2>Делаем шаблон умнее</h2>
@@ -370,23 +367,21 @@
     </div>
 </section>
 
+-->
 <section class='slide'>
     <div class='slidein'>
         <h2>Делаем шаблон умнее</h2>
 
-        <pre class='small'>
+        <pre class='small-medium'>
             <code>bt.match('<mark>header</mark>', function (ctx) {</code>
             <code>    ctx.setTag('<mark>div</mark>');</code>
-            <code> </code>
             <code>    ctx.setContent({</code>
-            <code>        elem: 'title', <mark class="comment">// создаём элемент title в содержимом</mark></code>
-            <code>        titleText: 'CodeFest 2014' <mark class="comment">// параметром передаём в него текст</mark></code>
+            <code>        elem: 'title',</code>
+            <code>        titleText: 'CodeFest 2014'</code>
             <code>    });</code>
             <code>});</code>
-            <code> </code>
             <code>bt.match('<mark>header__title</mark>', function (ctx) {</code>
             <code>    ctx.setTag('<mark>h1</mark>');</code>
-            <code> </code>
             <code>    ctx.setContent(</code>
             <code>        ctx.getParam('titleText')</code>
             <code>    );</code>
@@ -397,9 +392,9 @@
 
 <section class='slide'>
     <div class='slidein'>
-        <h2>Результат их работы</h2>
+        <h2>Результат</h2>
 
-        <pre class='small'>
+        <pre class=''>
             <code>&lt;div class="header"&gt;</code>
             <code>    &lt;h1 class="header__title"&gt;CodeFest 2014&lt;/h1&gt;</code>
             <code>&lt;/div&gt;</code>
@@ -633,20 +628,40 @@
             <code>    skin-shadow();</code>
             <code>}</code>
         </pre>
+    </div>
+</section>
 
-        <div class="next" style="position: absolute; left: 455px; top: 0">
+<section class='slide'>
+    <div class='slidein'>
+        <h2>Публичные селекторы</h2>
+
+        <pre class='medium'>
+            <code>.button {</code>
+            <code>    skin-common();</code>
+            <code>    skin-theme-normal();</code>
+            <code>}</code>
+            <code> </code>
+            <code> </code>
+            <code>.button_normal-shadow {</code>
+            <code>    skin-common();</code>
+            <code>    skin-theme-normal();</code>
+            <code>    skin-shadow();</code>
+            <code>}</code>
+        </pre>
+
+        <div style="position: absolute; left: 455px; top: 0">
             <h2>Приватные функции</h2>
 
             <pre class='medium' style="position: absolute; left: 20px; top: 124px;">
-                <code>skin-common() {</code>
+                <code><mark class="one">skin-common()</mark> {</code>
                 <code>    <mark class="comment">/* общие стили кнопки */</mark></code>
                 <code>}</code>
                 <code> </code>
-                <code>skin-theme-normal() {</code>
+                <code><mark class="one">skin-theme-normal()</mark> {</code>
                 <code>    <mark class="comment">/* цвета кнопки */</mark></code>
                 <code>}</code>
                 <code> </code>
-                <code>skin-shadow() {</code>
+                <code><mark class="one">skin-shadow()</mark> {</code>
                 <code>    <mark class="comment">/* тень под кнопкой */</mark></code>
                 <code>}</code>
             </pre>
@@ -873,7 +888,7 @@
     </div>
 </section>
 
-<section class="slide shout" id="todo">
+<section class="slide shout" id="blog">
     <div class='slidein'>
         <h2 style="font-size: 60px;">Blog Engine<br><br><a href="http://github.com/bevis-ui/bevis-blog">http://github.com/bevis-ui/bevis-blog</a></h2>
     </div>
@@ -910,7 +925,7 @@
             <ul style="font-size: 100%;">
                 <li>Презентация — <a href="http://bevis-ui.github.io/bevis-and-bt-speech/">bevis-ui.github.io/bevis-and-bt-speech</a></li>
                 <li>TODO MVC — <a href="http://github.com/bevis-ui/bevis-todo">github.com/bevis-ui/bevis-todo</a></li>
-                <li>Блогодвижок — <a href="http://github.com/bevis-ui/bevis-blog">github.com/bevis-ui/bevis-blog</a></li>
+                <li>Blog Engine — <a href="http://github.com/bevis-ui/bevis-blog">github.com/bevis-ui/bevis-blog</a></li>
                 <li>Документация — <a href="http://github.com/bevis-ui/docs">github.com/bevis-ui/docs</a></li>
             </ul>
             <ul style="font-size: 100%;">
