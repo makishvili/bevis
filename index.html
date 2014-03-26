@@ -14,6 +14,14 @@
     <p>Марат Дулин, Вадим Макишвили</p>
     <p>CodeFest 2014</p>
 </header>
+<!--
+<section class='slide cover'>
+    <div class='slidein'>
+        <img src="pictures/yandex.png" alt="">
+    </div>
+</section>
+-->
+
 <section class='slide cover' id='Cover'>
     <div class='slidein'>
         <div class='title'>
@@ -515,6 +523,27 @@
 
 <section class='slide'>
     <div class='slidein'>
+        <h2>Мы так не делаем</h2>
+
+        <pre class="">
+            <code>&lt;div class="<mark class="one">header</mark> <mark class="one">authorization</mark>"&gt;</code>
+            <code>&lt;/div&gt;</code>
+        </pre>
+    </div>
+</section>
+
+<section class='slide cover'>
+    <div class='slidein'>
+        <div style="position: absolute; bottom: -20px; right: -30px; text-align: right;">
+            <h2 style="font-size: 50%; color: #000000">Г.Данелия, 1977<br>В.Кикабидзе<br>&laquo;Мимино&raquo;</h2>
+        </div>
+
+        <img src="pictures/mimino.jpg" alt="">
+    </div>
+</section>
+
+<section class='slide'>
+    <div class='slidein'>
         <h2>View</h2>
 
         <pre class=''>
@@ -532,27 +561,6 @@
                 <code>&lt;/div&gt;</code>
             </pre>
         </div>
-    </div>
-</section>
-
-<section class='slide'>
-    <div class='slidein'>
-        <h2>Мы так не делаем</h2>
-
-        <pre class="">
-            <code>&lt;div class="<mark class="one">header</mark> <mark class="one">authorization</mark>"&gt;</code>
-            <code>&lt;/div&gt;</code>
-        </pre>
-    </div>
-</section>
-
-<section class='slide cover'>
-    <div class='slidein'>
-        <div style="position: absolute; bottom: -20px; right: -30px; text-align: right;">
-            <h2 style="font-size: 50%; color: #000000">Г.Данелия, 1977<br>В.Кикабидзе<br>&laquo;Мимино&raquo;</h2>
-        </div>
-
-        <img src="pictures/mimino.jpg" alt="">
     </div>
 </section>
 
@@ -610,7 +618,7 @@
 
 <section class='slide'>
     <div class='slidein'>
-        <h2>Публичные селекторы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Приватные функции</h2>
+        <h2>Публичные селекторы</h2>
 
         <pre class='medium'>
             <code><mark class="one">.button</mark> {</code>
@@ -626,19 +634,23 @@
             <code>}</code>
         </pre>
 
-        <pre class='medium' style="position: absolute; left: 455px; top: 124px;">
-            <code>skin-common() {</code>
-            <code>    <mark class="comment">/* общие стили кнопки */</mark></code>
-            <code>}</code>
-            <code> </code>
-            <code>skin-theme-normal() {</code>
-            <code>    <mark class="comment">/* цвета кнопки */</mark></code>
-            <code>}</code>
-            <code> </code>
-            <code>skin-shadow() {</code>
-            <code>    <mark class="comment">/* тень под кнопкой */</mark></code>
-            <code>}</code>
-        </pre>
+        <div class="next" style="position: absolute; left: 455px; top: 0">
+            <h2>Приватные функции</h2>
+
+            <pre class='medium' style="position: absolute; left: 20px; top: 124px;">
+                <code>skin-common() {</code>
+                <code>    <mark class="comment">/* общие стили кнопки */</mark></code>
+                <code>}</code>
+                <code> </code>
+                <code>skin-theme-normal() {</code>
+                <code>    <mark class="comment">/* цвета кнопки */</mark></code>
+                <code>}</code>
+                <code> </code>
+                <code>skin-shadow() {</code>
+                <code>    <mark class="comment">/* тень под кнопкой */</mark></code>
+                <code>}</code>
+            </pre>
+        </div>
     </div>
 </section>
 
@@ -650,14 +662,13 @@
             <code>.button {</code>
             <code>    skin-common();</code>
             <code>    skin-theme-normal();</code>
-            <code>    </code>
             <code>    <mark>/* а здесь разрулил все конфликты этих миксинов */</mark> </code>
             <code>}</code>
+            <code>    </code>
             <code>.button_normal-shadow {</code>
             <code>    skin-common();</code>
             <code>    skin-theme-normal();</code>
             <code>    skin-shadow();</code>
-            <code>    </code>
             <code>    <mark>/* а здесь разрулил все конфликты этих миксинов */</mark> </code>
             <code>}</code>
         </pre>
@@ -862,6 +873,12 @@
     </div>
 </section>
 
+<section class="slide shout" id="todo">
+    <div class='slidein'>
+        <h2 style="font-size: 60px;">Blog Engine<br><br><a href="http://github.com/bevis-ui/bevis-blog">http://github.com/bevis-ui/bevis-blog</a></h2>
+    </div>
+</section>
+
 <section class="slide">
     <div class='slidein'>
         <h2>BEViS</h2>
@@ -889,12 +906,14 @@
             <h2 style="font-size: 360%;">BEViS & bt</h2>
         </header>
 
-        <div style="position: absolute; top: 200px; left: -40px;">
-            <ul style="font-size: 110%;">
-                <li>Репозиторий — <a href="http://github.com/bevis-ui">github.com/bevis-ui</a></li>
+        <div style="position: absolute; top: 180px; left: -10px;">
+            <ul style="font-size: 100%;">
                 <li>Презентация — <a href="http://bevis-ui.github.io/bevis-and-bt-speech/">bevis-ui.github.io/bevis-and-bt-speech</a></li>
+                <li>TODO MVC — <a href="http://github.com/bevis-ui/bevis-todo">github.com/bevis-ui/bevis-todo</a></li>
+                <li>Блогодвижок — <a href="http://github.com/bevis-ui/bevis-blog">github.com/bevis-ui/bevis-blog</a></li>
+                <li>Документация — <a href="http://github.com/bevis-ui/docs">github.com/bevis-ui/docs</a></li>
             </ul>
-            <ul style="font-size: 110%;">
+            <ul style="font-size: 100%;">
                 <li>bt — <a href="http://github.com/enb-make/bt">github.com/enb-make/bt</a></li>
                 <li>ENB — <a href="http://github.com/enb-make/enb">github.com/enb-make/enb</a></li>
                 <li>ENB-конфигуратор — <a href="http://github.com/enb-make/enb">enb-make.info/config</a></li>
