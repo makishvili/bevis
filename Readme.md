@@ -4,4 +4,4 @@ CodeFest 2014 состоится 29-30 марта.
 
 ----
 
-Репозиторий переехал на [](https://github.com/bevis-ui/bevis-and-bt-speech)
+Репозиторий переехал на [https://github.com/bevis-ui/bevis-and-bt-speech](https://github.com/bevis-ui/bevis-and-bt-speech)
